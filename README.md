@@ -39,7 +39,11 @@ chmod +x run_container-pmb2_hunavsim2.bash
 ./run_container-pmb2_hunavsim2.bash
 ```
 
-Once you are inside the container, you must compile the shared worspace before running any simulation.
+Once you are inside the container, move the shared workspace and compile it before running any simulation.
+
+```sh
+cd ../hunavsim_ws
+```
 
 ```sh
 colcon build --symlink-install
@@ -56,6 +60,7 @@ The user can create/modify the simulations throught the shared workspace *hunavs
 
 
 NOTE1: SOMETIMES, GAZEBO TAKES A LONG TIME TO LAUNCH THE FIRST TIME LEADING TO ERRORS IN THE SYSTEM. IN THAT CASE, RE-RUN THE ROS LAUNCH FILE AGAIN. IT SHOULD WORK THE SECOND TIME.
+
 NOTE2: SOMETIMES, AFTER SHUTTING DOWN THE SIMULATION, GAZEBO DOES NOT CLOSE PROPERLY AND IT BECOMES A ZOMBIE PROCESS. PLEASE CHECK WITH TOOLS LIKE *top* and *htop* WHETHER THE PROCESS IS STILL ALIVE AND KILL IT IF NECESSARY.  
 
 
