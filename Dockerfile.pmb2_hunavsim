@@ -1,0 +1,133 @@
+# get image of ROS 2 humble
+FROM osrf/ros:humble-desktop-full
+
+#
+# docker build -t pmb2_hunavsim -f Dockerfile.pmb2_hunavsim .
+#
+
+WORKDIR /home
+
+ENV QT_X11_NO_MITSHM=1
+ENV EDITOR=nano
+ENV XDG_RUNTIME_DIR=/tmp
+
+
+ENV SHELL=/bin/bash
+SHELL ["/bin/bash", "-c"] 
+
+
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+# we set distro ROS2 Humble
+ARG distro="humble"
+
+# from now on, we install required packages for HuNavSim 
+ENV GAZEBO_MODEL_PATH=''
+ENV GAZEBO_PLUGIN_PATH=''
+ENV GAZEBO_RESOURCE_PATH=''
+
+
+RUN apt-get update && apt-get install -y \
+	wget \
+ 	git \
+ 	bash-completion \
+ 	build-essential \
+ 	sudo \
+ 	nano \
+ 	&& rm -rf /var/lib/apt/lists/*
+
+RUN apt-get update && apt-get install -y \
+	python3-vcstool \
+	python3-rosdep \
+	python3-colcon-common-extensions \
+	&& rm -rf /var/lib/apt/lists/*
+
+
+# other required ROS packages  
+RUN apt-get update && apt-get install -y \
+  ros-humble-nav2-* ros-dev-tools \
+  ros-humble-teleop-twist-joy ros-humble-urdf ros-humble-xacro \
+  ros-humble-behaviortree-cpp-v3 ros-humble-gazebo-ros ros-humble-gazebo-plugins \
+  ros-humble-gazebo-ros-pkgs ros-humble-teleop-twist-keyboard ros-humble-laser-proc \
+  ros-humble-controller-interface ros-humble-controller-manager \
+  ros-humble-ros2-controllers \
+  ros-humble-joint-state-broadcaster ros-humble-joint-state-publisher \
+  ros-humble-joint-trajectory-controller ros-humble-joint-state-publisher-gui \
+  ros-humble-compressed-image-transport ros-humble-rqt* \
+  ros-humble-slam-toolbox ros-humble-navigation2 ros-humble-interactive-markers \
+  ros-humble-vision-msgs ros-humble-tf-transformations \
+  && rm -rf /var/lib/apt/lists/*
+
+# rosdep    
+RUN apt-get install python3-rosdep -y
+#RUN rosdep init
+#RUN rosdep update
+#RUN rosdep install -i --from-path src --rosdistro humble -y
+
+
+# install the lightsfm library
+RUN git clone https://github.com/robotics-upo/lightsfm.git \
+  && cd lightsfm && make && make install
+
+RUN echo "source /opt/ros/humble/setup.bash" >> /root/.bashrc 
+RUN echo "source /usr/share/gazebo/setup.sh" >> /root/.bashrc 
+
+
+# PAL pmb2 dependencies
+RUN apt-get update && apt-get install -y \
+  ros-humble-launch-param-builder \
+  ros-humble-joy-linux \
+  ros-humble-joy-teleop \
+  ros-humble-pal-maps \
+  ros-humble-rmw-cyclonedds-cpp \
+  ros-humble-twist-mux \
+  ros-humble-pal-gazebo-plugins \
+  ros-humble-pal-urdf-utils \
+  && rm -rf /var/lib/apt/lists/*
+	
+ENV RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+
+  
+
+# Create workspace
+RUN mkdir -p hunavsim_ws/src 
+
+# get pmb2 packages
+WORKDIR /home/hunavsim_ws/src
+#RUN vcs import --input https://raw.githubusercontent.com/pal-robotics/pmb2_tutorials/humble-devel/pmb2_public.repos src
+RUN git clone -b humble-devel https://github.com/pal-robotics/urdf_test.git
+RUN git clone -b master https://github.com/pal-robotics/launch_pal.git
+RUN git clone -b humble-devel https://github.com/pal-robotics/pal_gazebo_worlds.git
+RUN git clone -b humble-devel https://github.com/pal-robotics/pal_navigation_cfg_public.git
+# take pmb2_robot from UPO's fork
+RUN git clone -b humble-devel https://github.com/robotics-upo/pmb2_robot.git
+
+RUN git clone -b humble-devel https://github.com/pal-robotics/pmb2_navigation.git
+RUN git clone -b humble-devel https://github.com/pal-robotics/pmb2_simulation.git
+
+
+# get last versions of these packages
+RUN git clone -b humble https://github.com/ros-controls/ros2_control.git
+RUN git clone -b humble https://github.com/ros-controls/gazebo_ros2_control.git
+
+# get HuNavSim packages
+#WORKDIR /home/hunavsim_ws/src 
+RUN git clone -b ros2 https://github.com/wg-perception/people.git
+RUN git clone -b humble https://github.com/robotics-upo/hunav_sim.git
+RUN git clone -b humble https://github.com/robotics-upo/hunav_gazebo_wrapper.git
+
+
+
+# compile the workspace
+WORKDIR /home/hunavsim_ws/
+RUN source /opt/ros/humble/setup.bash && \
+  colcon build --symlink-install
+
+# source the workspace
+RUN source /home/hunavsim_ws/install/setup.bash
+RUN echo "source /home/hunavsim_ws/install/setup.bash" >> /root/.bashrc 
+
+
+
+
