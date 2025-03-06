@@ -9,30 +9,30 @@ echo "Building the docker image..."
 docker build -t pmb2_hunavsim -f Dockerfile.pmb2_hunavsim2 .
 
 
-# Nombre de la carpeta
+# Folder names
 FOLDER_NAME="hunavsim_ws"
 FOLDER2_NAME="src"
 
 
 echo "Creating share workspace..."
-# Verifica si la carpeta ya existe
+# check if already there
 if [ -d "$FOLDER_NAME" ]; then
-    echo "La carpeta '$FOLDER_NAME' ya existe."
+    echo "Folder '$FOLDER_NAME' already exists."
 else
-    # Crea la carpeta
+    # Create the folder
     mkdir "$FOLDER_NAME"
-    echo "Carpeta '$FOLDER_NAME' creada exitosamente."
+    echo "Folder '$FOLDER_NAME' created successfully."
 fi
 
 # Enter the directory
 cd $FOLDER_NAME
-# Verifica si la carpeta ya existe
+# check if already there
 if [ -d "$FOLDER2_NAME" ]; then
-    echo "La carpeta '$FOLDER2_NAME' ya existe."
+    echo "Folder '$FOLDER2_NAME' already exists."
 else
-    # Crea la carpeta
+    # Create the folder
     mkdir "$FOLDER2_NAME"
-    echo "Carpeta '$FOLDER2_NAME' creada exitosamente."
+    echo "Folder '$FOLDER2_NAME' created successfully."
 fi
 
 cd $FOLDER2_NAME
@@ -44,7 +44,10 @@ echo "Repository '$REPO1_URL' has been cloned."
 git clone "$REPO2_URL" 
 echo "Repository '$REPO2_URL' has been cloned."
 
+echo "_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-__-⁻-_-⁻-_-⁻-_-⁻-_"
 echo "HuNavSim docker system has been installed successfully."
-
+echo "_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-__-⁻-_-⁻-_-⁻-_-⁻-_"
+echo "To run the docker image, execute: "
+echo " ./run_container-pmb2_hunavsim2.bash"
 
 
