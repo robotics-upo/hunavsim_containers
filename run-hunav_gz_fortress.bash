@@ -5,7 +5,7 @@ xhost +local:docker
 cwd=$(pwd)
 
 docker run -it \
-    --name hunavsim_pmb2 \
+    --name hunavsim_gz_fortress \
     --gpus all \
     --runtime=nvidia \
     --env="NVIDIA_VISIBLE_DEVICES=none" \
@@ -15,9 +15,9 @@ docker run -it \
     --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
     --net=host \
     --privileged \
-    --mount type=bind,source=$cwd/hunavsim_ws,target=/home/hunavsim_ws \
-    pmb2_hunavsim \
+    --mount type=bind,source=$cwd/hunav_gz_fortress_ws,target=/home/hunav_gz_fortress_ws \
+    gz_fortress_hunavsim \
     bash
     
-docker rm hunavsim_pmb2
+docker rm hunavsim_gz_fortress
 

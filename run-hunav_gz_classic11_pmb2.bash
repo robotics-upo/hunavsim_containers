@@ -15,6 +15,7 @@ docker run -it \
     --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
     --net=host \
     --privileged \
+    --mount type=bind,source=$cwd/hunav_gz_classic_ws,target=/home/hunav_gz_classic_ws \
     pmb2_hunavsim \
     bash
     

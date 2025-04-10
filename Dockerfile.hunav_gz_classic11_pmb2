@@ -2,7 +2,7 @@
 FROM osrf/ros:humble-desktop-full
 
 #
-# docker build -t pmb2_hunavsim -f Dockerfile.pmb2_hunavsim .
+# docker build -t pmb2_hunavsim -f Dockerfile.hunav_gz_classic11_pmb2 .
 #
 
 WORKDIR /home
@@ -85,10 +85,9 @@ RUN apt-get update && apt-get install -y \
   ros-humble-pal-gazebo-plugins \
   ros-humble-pal-urdf-utils \
   && rm -rf /var/lib/apt/lists/*
-	
+# required by pmb2 robot simulation	
 ENV RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 
-  
 
 # Create workspace
 RUN mkdir -p pmb2_ws/src 
