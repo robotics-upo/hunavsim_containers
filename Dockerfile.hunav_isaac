@@ -1,0 +1,139 @@
+###############################################################################
+# Isaac Sim 4.5 + ROS 2 Humble Desktop Full + HuNav Overlay + lightsfm
+###############################################################################
+ARG ISAAC_TAG=4.5.0
+FROM nvcr.io/nvidia/isaac-sim:${ISAAC_TAG}
+SHELL ["/bin/bash", "-c"]
+
+#───────────────────────────────────────────────────────────────────────────────
+# Basic environment variables
+#───────────────────────────────────────────────────────────────────────────────
+ENV DEBIAN_FRONTEND=noninteractive \
+  TZ=Europe/Madrid
+ENV QT_X11_NO_MITSHM=1 EDITOR=nano XDG_RUNTIME_DIR=/tmp
+
+
+###############################################################################
+# 1) Enable Universe y system tools
+###############################################################################
+RUN apt-get update && apt-get install -y \
+  software-properties-common \
+  apt-transport-https \
+  ca-certificates \
+  curl \
+  gnupg2 \
+  lsb-release \
+  git \
+  build-essential \
+  x11-xserver-utils \
+  terminator \
+  cmake \
+  nano \
+  rsync \
+  unzip \
+  && add-apt-repository universe \
+  && rm -rf /var/lib/apt/lists/*
+
+RUN apt-get update && apt-get install -y \
+  xdg-utils \
+  w3m \
+  wslu \
+  && rm -rf /var/lib/apt/lists/
+
+###############################################################################
+# 2) GPG Key and ROS 2 repo
+###############################################################################
+RUN curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key \
+  | gpg --dearmor -o /usr/share/keyrings/ros-archive-keyring.gpg && \
+  echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] \
+  http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" \
+  > /etc/apt/sources.list.d/ros2.list
+
+###############################################################################
+# 3) System update and ROS 2 install + build-tools
+###############################################################################
+RUN apt-get update && \
+  apt-get install -y --allow-downgrades \
+  libbrotli1=1.0.9-2build6 && \
+  rm -rf /var/lib/apt/lists/*
+
+RUN apt-get update && apt-get upgrade -y && \
+  apt-get install -y \
+  libfreetype6-dev \
+  libfontconfig1-dev \
+  ros-humble-desktop \
+  python3-colcon-common-extensions \
+  python3-rosdep \
+  python3-vcstool \
+  && rm -rf /var/lib/apt/lists/*
+
+# ── ROS 2 extra binary packages ───────────────────────────────────────────
+RUN apt-get update && apt-get install -y \
+  ros-humble-nav2-* \
+  ros-humble-teleop-twist-joy ros-humble-teleop-twist-keyboard \
+  ros-humble-urdf ros-humble-xacro \
+  ros-humble-ackermann-msgs \
+  ros-humble-rmw-cyclonedds-cpp \
+  ros-humble-laser-proc \
+  ros-humble-vision-msgs \
+  ros-humble-tf-transformations \
+  ros-humble-controller-interface ros-humble-controller-manager \
+  ros-humble-ros2-controllers \
+  ros-humble-joint-state-broadcaster ros-humble-joint-state-publisher \
+  ros-humble-joint-trajectory-controller ros-humble-joint-state-publisher-gui \
+  ros-humble-compressed-image-transport ros-humble-rqt* \
+  ros-humble-slam-toolbox ros-humble-navigation2 ros-humble-interactive-markers \
+  && rm -rf /var/lib/apt/lists/*
+
+RUN apt-get install python3-rosdep
+#───────────────────────────────────────────────────────────────────────────────
+# 4) Install lightsfm (Social-Force Model) – required by HuNavSim
+#───────────────────────────────────────────────────────────────────────────────
+RUN git clone https://github.com/robotics-upo/lightsfm.git \
+  && cd lightsfm && make && make install
+
+#───────────────────────────────────────────────────────────────────────────────
+# 5) Clone required packages: People, BehaviorTree and IsaacSim-ros_workspaces
+#───────────────────────────────────────────────────────────────────────────────
+WORKDIR /home/ros2_ws/src
+
+RUN git clone --branch ros2 https://github.com/wg-perception/people.git && \
+  git clone https://github.com/BehaviorTree/BehaviorTree.CPP.git && \
+  git clone https://github.com/BehaviorTree/BehaviorTree.ROS2.git && \
+  git clone https://github.com/isaac-sim/IsaacSim-ros_workspaces.git /tmp/isaac_ws && \
+  rsync -a /tmp/isaac_ws/humble_ws/src/ . && rm -rf /tmp/isaac_ws
+
+#───────────────────────────────────────────────────────────────────────────────
+# 6) Solve dependencies and compile workspace 
+#───────────────────────────────────────────────────────────────────────────────
+RUN apt-get update && \
+  rosdep init && \
+  rosdep update && \
+  source /opt/ros/humble/setup.bash && \
+  rosdep install --from-paths /home/ros2_ws/src \
+  --rosdistro humble -y --ignore-src && \
+  rm -rf /var/lib/apt/lists/*
+
+WORKDIR /home/ros2_ws/
+RUN apt-get update && source /opt/ros/humble/setup.bash && \
+  colcon build --symlink-install
+
+WORKDIR /workspace
+RUN /isaac-sim/python.sh -m pip install netifaces
+#───────────────────────────────────────────────────────────────────────────────
+# 7) Source the workspaces and set launcher alias
+#───────────────────────────────────────────────────────────────────────────────
+RUN source /opt/ros/humble/setup.bash
+RUN source /home/ros2_ws/install/setup.bash
+RUN echo "alias launch_hunav_isaac='source /workspace/hunav_isaac_ws/install/setup.bash && \
+          cp /workspace/hunav_isaac_ws/src/Hunav_isaac_wrapper/isaacsim.exp.base.kit /isaac-sim/apps/ 2>/dev/null || true && \
+          /isaac-sim/python.sh /workspace/hunav_isaac_ws/src/Hunav_isaac_wrapper/main.py'" \
+  >> /etc/bash.bashrc
+RUN echo 'source /opt/ros/humble/setup.bash' \
+  >> /etc/bash.bashrc && \
+  echo 'source /home/ros2_ws/install/setup.bash' \
+  >> /etc/bash.bashrc
+
+
+WORKDIR /workspace/hunav_isaac_ws
+

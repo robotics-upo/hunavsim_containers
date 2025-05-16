@@ -7,7 +7,7 @@ echo "Please select wich HuNavSim system you want to install:"
 echo ""
 echo "1. HuNavSim + Gazebo Classic 11 + ROS 2 Humble + PAL PMB2 robot"
 echo "2. HuNavSim + Gazebo Fortress   + ROS 2 Humble"
-echo "3. HuNavSim + Isaac Sim         + ROS 2 Humble + robot? (AVAILABLE SOON!)"
+echo "3. HuNavSim + Isaac Sim         + ROS 2 Humble + Carter robot"
 echo "4. HuNavSim + Webots            + ROS 2 Humble + robot? (AVAILABLE SOON!)"
 echo "5. HuNavSim + O3DE              + ROS 2 Humble + robot? (UMM.. WE ARE STILL THINKING ABOUT IT!)"
 echo ""
@@ -62,16 +62,19 @@ case $option in
         ;;
 
     3)
-        # HuNavSim + Isaac Sim         + ROS 2 Humble + robot? (AVAILABLE SOON!)
-        echo "You selected option 3: HuNavSim + Isaac Sim         + ROS 2 Humble + robot? (AVAILABLE SOON!)"
-        # run the installation script for HuNavSim + Isaac Sim         + ROS 2 Humble + robot? (AVAILABLE SOON!)
+        # HuNavSim + Isaac Sim         + ROS 2 Humble + Carter robot 
+        echo "You selected option 3: HuNavSim + Isaac Sim + ROS 2 Humble + Carter robot"
+        # run the installation script for HuNavSim + Isaac Sim + ROS 2 Humble + Carter robot
         # check if docker is installed
         if ! command -v docker &> /dev/null; then
             echo "Docker is not installed. Please install Docker first."
             exit 1
         fi
-        echo "TO BE DONE!!!"
-        exit 1
+        FOLDER_NAME="hunav_isaac_ws"                 
+        CONTAINER_NAME="hunav_isaac_sim"
+        DOCKERFILE_NAME="Dockerfile.hunav_isaac"     
+        RUN_SCRIPT_NAME="run-hunav_isaac.bash"      
+        REPO2_URL="https://github.com/robotics-upo/Hunav_isaac_wrapper.git"
         ;;
     4)
         # HuNavSim + Webots            + ROS 2 Humble + robot? (AVAILABLE SOON!)
