@@ -48,7 +48,7 @@ RUN apt-get update && apt-get install -y \
 RUN apt-get update && apt-get install -y \
   ros-humble-nav2-* ros-dev-tools \
   ros-humble-teleop-twist-joy ros-humble-urdf ros-humble-xacro \
-  ros-humble-behaviortree-cpp-v3 ros-humble-gazebo-ros ros-humble-gazebo-plugins \
+  ros-humble-gazebo-ros ros-humble-gazebo-plugins \
   ros-humble-gazebo-ros-pkgs ros-humble-teleop-twist-keyboard ros-humble-laser-proc \
   ros-humble-controller-interface ros-humble-controller-manager \
   ros-humble-ros2-controllers \
@@ -114,6 +114,10 @@ RUN git clone -b humble https://github.com/ros-controls/gazebo_ros2_control.git
 RUN git clone -b ros2 https://github.com/wg-perception/people.git
 #RUN git clone -b humble https://github.com/robotics-upo/hunav_sim.git
 #RUN git clone -b humble https://github.com/robotics-upo/hunav_gazebo_wrapper.git
+
+# get BehaviorTree.CPP v4.6 or newer
+RUN git clone https://github.com/BehaviorTree/BehaviorTree.CPP.git
+RUN git clone -b humble https://github.com/BehaviorTree/BehaviorTree.ROS2.git
 
 
 # compile the workspace
