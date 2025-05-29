@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "hunav_msgs__py",
+		"source" : "/home/hunav_gz_fortress_ws/build/hunav_msgs/hunav_msgs__py"
+	}
+}

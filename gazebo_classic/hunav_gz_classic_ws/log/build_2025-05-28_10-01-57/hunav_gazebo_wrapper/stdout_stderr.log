@@ -1,0 +1,6 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/HuNavPlugin.dir/src/HuNavPlugin.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/hunav_gazebo_world_generator.dir/src/WorldGenerator.cpp.o[0m
+[ 75%] [32m[1mLinking CXX executable hunav_gazebo_world_generator[0m
+[ 75%] Built target hunav_gazebo_world_generator
+[100%] [32m[1mLinking CXX shared library libHuNavPlugin.so[0m
+[100%] Built target HuNavPlugin

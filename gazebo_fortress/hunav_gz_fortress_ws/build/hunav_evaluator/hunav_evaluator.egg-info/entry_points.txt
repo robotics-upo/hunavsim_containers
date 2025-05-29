@@ -1,0 +1,3 @@
+[console_scripts]
+hunav_evaluator_node = hunav_evaluator.hunav_evaluator_node:main
+

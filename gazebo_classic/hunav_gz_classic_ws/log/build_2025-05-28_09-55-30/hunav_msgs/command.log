@@ -1,0 +1,6 @@
+Invoking command in '/home/hunav_gz_classic_ws/build/hunav_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/hunav_gz_classic_ws/src/hunav_sim/hunav_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hunav_gz_classic_ws/install/hunav_msgs
+Invoked command in '/home/hunav_gz_classic_ws/build/hunav_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/hunav_gz_classic_ws/src/hunav_sim/hunav_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hunav_gz_classic_ws/install/hunav_msgs
+Invoking command in '/home/hunav_gz_classic_ws/build/hunav_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hunav_gz_classic_ws/build/hunav_msgs -- -j16 -l16
+Invoked command in '/home/hunav_gz_classic_ws/build/hunav_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hunav_gz_classic_ws/build/hunav_msgs -- -j16 -l16
+Invoking command in '/home/hunav_gz_classic_ws/build/hunav_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hunav_gz_classic_ws/build/hunav_msgs
+Invoked command in '/home/hunav_gz_classic_ws/build/hunav_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hunav_gz_classic_ws/build/hunav_msgs

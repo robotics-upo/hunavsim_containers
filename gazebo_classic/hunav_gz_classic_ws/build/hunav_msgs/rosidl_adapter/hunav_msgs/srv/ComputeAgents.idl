@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from hunav_msgs/srv/ComputeAgents.srv
+// generated code does not contain a copyright notice
+
+#include "hunav_msgs/msg/Agent.idl"
+#include "hunav_msgs/msg/Agents.idl"
+
+module hunav_msgs {
+  module srv {
+    @verbatim (language="comment", text=
+      "agents and robot")
+    struct ComputeAgents_Request {
+      hunav_msgs::msg::Agents current_agents;
+
+      hunav_msgs::msg::Agent robot;
+    };
+    struct ComputeAgents_Response {
+      hunav_msgs::msg::Agents updated_agents;
+    };
+  };
+};

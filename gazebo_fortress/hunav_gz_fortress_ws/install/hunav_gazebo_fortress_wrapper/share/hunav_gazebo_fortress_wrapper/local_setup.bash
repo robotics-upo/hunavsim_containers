@@ -1,0 +1,1 @@
+/home/hunav_gz_fortress_ws/build/hunav_gazebo_fortress_wrapper/ament_cmake_environment_hooks/local_setup.bash

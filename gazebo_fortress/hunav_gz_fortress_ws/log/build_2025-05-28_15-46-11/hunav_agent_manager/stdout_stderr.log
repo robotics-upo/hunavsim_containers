@@ -1,0 +1,103 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found hunav_msgs: 1.0.0 (/home/hunav_gz_fortress_ws/install/hunav_msgs/share/hunav_msgs/cmake)
+-- Found people_msgs: 1.3.0 (/home/ros2_ws/install/people_msgs/share/people_msgs/cmake)
+-- Found visualization_msgs: 4.8.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+-- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)
+-- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)
+-- Found nav2_behavior_tree: 1.1.18 (/opt/ros/humble/share/nav2_behavior_tree/cmake)
+-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+-- Found Eigen3: TRUE (found version "3.4.0") 
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Found behaviortree_cpp: 4.7.1 (/home/ros2_ws/install/behaviortree_cpp/share/behaviortree_cpp/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/hunav_gz_fortress_ws/build/hunav_agent_manager
+[ 75%] [32mBuilding CXX object CMakeFiles/hunav_loader.dir/src/hunav_loader.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/hunav_agent_manager.dir/src/bt_functions.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/hunav_agent_manager.dir/src/agent_manager_node.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/hunav_agent_manager.dir/src/agent_manager.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/hunav_agent_manager.dir/src/bt_node.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/hunav_agent_manager.dir/src/time_expired_condition.cpp.o[0m
+[ 87%] [32m[1mLinking CXX executable hunav_loader[0m
+[ 87%] Built target hunav_loader
+[01m[K/home/hunav_gz_fortress_ws/src/hunav_sim/hunav_agent_manager/src/bt_node.cpp:[m[K In constructor ‘[01m[Khunav::BTnode::BTnode()[m[K’:
+[01m[K/home/hunav_gz_fortress_ws/src/hunav_sim/hunav_agent_manager/src/bt_node.cpp:21:27:[m[K [01;35m[Kwarning: [m[Kcatching polymorphic type ‘[01m[Kclass ament_index_cpp::PackageNotFoundError[m[K’ by value [[01;35m[K-Wcatch-value=[m[K]
+   21 |   catch (ament_index_cpp::[01;35m[KPackageNotFoundError[m[K)
+      |                           [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hunav_gz_fortress_ws/src/hunav_sim/hunav_agent_manager/src/bt_node.cpp:[m[K In member function ‘[01m[Kvoid hunav::BTnode::computeAgentsService(std::shared_ptr<hunav_msgs::srv::ComputeAgents_Request_<std::allocator<void> > >, std::shared_ptr<hunav_msgs::srv::ComputeAgents_Response_<std::allocator<void> > >)[m[K’:
+[01m[K/home/hunav_gz_fortress_ws/src/hunav_sim/hunav_agent_manager/src/bt_node.cpp:319:18:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kstatus[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  319 |   BT::NodeStatus [01;35m[Kstatus[m[K = tree_tick(time_step_secs);
+      |                  [01;35m[K^~~~~~[m[K
+[01m[K/home/hunav_gz_fortress_ws/src/hunav_sim/hunav_agent_manager/src/bt_node.cpp:[m[K In member function ‘[01m[Kvoid hunav::BTnode::moveAgentService(std::shared_ptr<hunav_msgs::srv::MoveAgent_Request_<std::allocator<void> > >, std::shared_ptr<hunav_msgs::srv::MoveAgent_Response_<std::allocator<void> > >)[m[K’:
+[01m[K/home/hunav_gz_fortress_ws/src/hunav_sim/hunav_agent_manager/src/bt_node.cpp:386:18:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kstatus[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  386 |   BT::NodeStatus [01;35m[Kstatus[m[K = tree_tick(request->agent_id, time_step_secs);
+      |                  [01;35m[K^~~~~~[m[K
+[01m[K/home/hunav_gz_fortress_ws/src/hunav_sim/hunav_agent_manager/src/bt_node.cpp:[m[K In member function ‘[01m[Kvoid hunav::BTnode::computeAgentService(std::shared_ptr<hunav_msgs::srv::ComputeAgent_Request_<std::allocator<void> > >, std::shared_ptr<hunav_msgs::srv::ComputeAgent_Response_<std::allocator<void> > >)[m[K’:
+[01m[K/home/hunav_gz_fortress_ws/src/hunav_sim/hunav_agent_manager/src/bt_node.cpp:400:18:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kstatus[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  400 |   BT::NodeStatus [01;35m[Kstatus[m[K = tree_tick(request->id);
+      |                  [01;35m[K^~~~~~[m[K
+[01m[K/home/hunav_gz_fortress_ws/src/hunav_sim/hunav_agent_manager/src/bt_node.cpp:[m[K In member function ‘[01m[Kvoid hunav::BTnode::publish_agent_states(rclcpp::Time, hunav_msgs::msg::Agents_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/hunav_gz_fortress_ws/src/hunav_sim/hunav_agent_manager/src/bt_node.cpp:454:48:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kt[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  454 | void BTnode::publish_agent_states([01;35m[Krclcpp::Time t[m[K, const hunav_msgs::msg::Agents::SharedPtr msg)
+      |                                   [01;35m[K~~~~~~~~~~~~~^[m[K
+[01m[K/home/hunav_gz_fortress_ws/src/hunav_sim/hunav_agent_manager/src/bt_node.cpp:[m[K In member function ‘[01m[Kvoid hunav::BTnode::publish_robot_state(rclcpp::Time, hunav_msgs::msg::Agent_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/hunav_gz_fortress_ws/src/hunav_sim/hunav_agent_manager/src/bt_node.cpp:459:47:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kt[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  459 | void BTnode::publish_robot_state([01;35m[Krclcpp::Time t[m[K, const hunav_msgs::msg::Agent::SharedPtr msg)
+      |                                  [01;35m[K~~~~~~~~~~~~~^[m[K
+[100%] [32m[1mLinking CXX executable hunav_agent_manager[0m
+[100%] Built target hunav_agent_manager
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_agent_manager/lib/hunav_agent_manager/hunav_agent_manager
+-- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_agent_manager/lib/hunav_agent_manager/hunav_loader
+-- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_agent_manager/share/hunav_agent_manager//behavior_trees/BTCuriousNav.xml
+-- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_agent_manager/share/hunav_agent_manager//behavior_trees/BTRegularNav.xml
+-- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_agent_manager/share/hunav_agent_manager//behavior_trees/BTScaredNav.xml
+-- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_agent_manager/share/hunav_agent_manager//behavior_trees/BTSurprisedNav.xml
+-- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_agent_manager/share/hunav_agent_manager//behavior_trees/BTThreateningNav.xml
+-- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_agent_manager/share/hunav_agent_manager//config/agents.yaml
+-- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_agent_manager/share/hunav_agent_manager//config/agents_house.yaml
+-- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_agent_manager/share/hunav_agent_manager//config/agents_warehouse.yaml
+-- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_agent_manager/share/ament_index/resource_index/package_run_dependencies/hunav_agent_manager
+-- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_agent_manager/share/ament_index/resource_index/parent_prefix_path/hunav_agent_manager
+-- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_agent_manager/share/hunav_agent_manager/environment/ament_prefix_path.sh
+-- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_agent_manager/share/hunav_agent_manager/environment/ament_prefix_path.dsv
+-- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_agent_manager/share/hunav_agent_manager/environment/path.sh
+-- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_agent_manager/share/hunav_agent_manager/environment/path.dsv
+-- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_agent_manager/share/hunav_agent_manager/local_setup.bash
+-- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_agent_manager/share/hunav_agent_manager/local_setup.sh
+-- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_agent_manager/share/hunav_agent_manager/local_setup.zsh
+-- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_agent_manager/share/hunav_agent_manager/local_setup.dsv
+-- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_agent_manager/share/hunav_agent_manager/package.dsv
+-- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_agent_manager/share/ament_index/resource_index/packages/hunav_agent_manager
+-- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_agent_manager/share/hunav_agent_manager/cmake/hunav_agent_managerConfig.cmake
+-- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_agent_manager/share/hunav_agent_manager/cmake/hunav_agent_managerConfig-version.cmake
+-- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_agent_manager/share/hunav_agent_manager/package.xml

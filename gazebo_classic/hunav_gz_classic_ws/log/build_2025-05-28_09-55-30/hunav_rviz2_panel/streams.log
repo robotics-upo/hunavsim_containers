@@ -1,0 +1,85 @@
+[0.156s] Invoking command in '/home/hunav_gz_classic_ws/build/hunav_rviz2_panel': AMENT_PREFIX_PATH=/home/hunav_gz_classic_ws/install/hunav_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hunav_gz_classic_ws/install/hunav_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/hunav_gz_classic_ws/install/hunav_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hunav_gz_classic_ws/install/hunav_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/hunav_gz_classic_ws/src/hunav_sim/hunav_rviz2_panel -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hunav_gz_classic_ws/install/hunav_rviz2_panel
+[0.195s] -- The C compiler identification is GNU 11.4.0
+[0.236s] -- The CXX compiler identification is GNU 11.4.0
+[0.240s] -- Detecting C compiler ABI info
+[0.292s] -- Detecting C compiler ABI info - done
+[0.296s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.297s] -- Detecting C compile features
+[0.297s] -- Detecting C compile features - done
+[0.299s] -- Detecting CXX compiler ABI info
+[0.356s] -- Detecting CXX compiler ABI info - done
+[0.360s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.360s] -- Detecting CXX compile features
+[0.361s] -- Detecting CXX compile features - done
+[0.363s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.462s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.500s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.538s] -- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.573s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.578s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.584s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.593s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.606s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.637s] -- Found nav2_util: 1.1.18 (/opt/ros/humble/share/nav2_util/cmake)
+[0.749s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.751s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.767s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.775s] -- Looking for pthread.h
+[0.831s] -- Looking for pthread.h - found
+[0.832s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.891s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.891s] -- Found Threads: TRUE  
+[0.971s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.972s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[0.972s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.007s] -- Found hunav_msgs: 1.0.0 (/home/hunav_gz_classic_ws/install/hunav_msgs/share/hunav_msgs/cmake)
+[1.020s] -- Found pluginlib: 5.1.0 (/opt/ros/humble/share/pluginlib/cmake)
+[1.051s] -- Found rviz_common: 11.2.16 (/opt/ros/humble/share/rviz_common/cmake)
+[1.056s] -- Setting assimp_DIR to: '/opt/ros/humble/share/rviz_assimp_vendor/cmake/../../../opt/rviz_assimp_vendor/lib/cmake/assimp-4.1'
+[1.064s] -- Setting OGRE_DIR to: '/opt/ros/humble/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+[1.065s] -- Found OGRE
+[1.065s] --   static     : OFF
+[1.065s] --   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[1.066s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[1.066s] --   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media
+[1.066s] -- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+[1.066s] -- OGRE_LIBRARY_DIRS: /opt/ros/humble/opt/rviz_ogre_vendor/lib
+[1.066s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[1.066s] -- OGRE_PLUGIN_DIR: /opt/ros/humble/opt/rviz_ogre_vendor/lib/OGRE
+[1.066s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[1.066s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[1.066s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[1.066s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[1.079s] -- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") 
+[1.082s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   
+[1.153s] -- Found X11: /usr/include   
+[1.154s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+[1.211s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+[1.211s] -- Looking for gethostbyname
+[1.268s] -- Looking for gethostbyname - found
+[1.268s] -- Looking for connect
+[1.323s] -- Looking for connect - found
+[1.323s] -- Looking for remove
+[1.377s] -- Looking for remove - found
+[1.377s] -- Looking for shmat
+[1.432s] -- Looking for shmat - found
+[1.432s] -- Looking for IceConnectionNumber in ICE
+[1.488s] -- Looking for IceConnectionNumber in ICE - found
+[1.564s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[1.596s] -- Found rviz_default_plugins: 11.2.16 (/opt/ros/humble/share/rviz_default_plugins/cmake)
+[1.655s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.714s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.719s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.720s] -- Configured cppcheck include dirs: /home/hunav_gz_classic_ws/src/hunav_sim/hunav_rviz2_panel/include
+[1.720s] -- Configured cppcheck exclude dirs and/or files: 
+[1.722s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.722s] -- Configured cpplint exclude dirs and/or files: 
+[1.723s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.724s] -- Added test 'lint_cmake' to check CMake code style
+[1.724s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.727s] -- Added test 'uncrustify' to check C / C++ code style
+[1.727s] -- Configured uncrustify additional arguments: 
+[1.727s] -- Added test 'xmllint' to check XML markup files
+[1.730s] -- Configuring done
+[1.777s] -- Generating done
+[1.781s] -- Build files have been written to: /home/hunav_gz_classic_ws/build/hunav_rviz2_panel

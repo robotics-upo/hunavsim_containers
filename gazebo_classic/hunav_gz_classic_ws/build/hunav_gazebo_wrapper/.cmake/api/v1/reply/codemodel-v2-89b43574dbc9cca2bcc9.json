@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-2b700fb3ba7ebc8b40a5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.2"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "hunav_gazebo_wrapper",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "HuNavPlugin::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-HuNavPlugin-92e1dd87c2006d8f906e.json",
+					"name" : "HuNavPlugin",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hunav_gazebo_world_generator::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hunav_gazebo_world_generator-82b71bc36b23f256932b.json",
+					"name" : "hunav_gazebo_world_generator",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hunav_gazebo_wrapper_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hunav_gazebo_wrapper_uninstall-eb6ad6a74e1bf9812042.json",
+					"name" : "hunav_gazebo_wrapper_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-889aad1b5e3815d2603d.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/hunav_gz_classic_ws/build/hunav_gazebo_wrapper",
+		"source" : "/home/hunav_gz_classic_ws/src/hunav_gazebo_wrapper"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

@@ -1,0 +1,4 @@
+source;share/hunav_rviz2_panel/local_setup.bash
+source;share/hunav_rviz2_panel/local_setup.dsv
+source;share/hunav_rviz2_panel/local_setup.sh
+source;share/hunav_rviz2_panel/local_setup.zsh

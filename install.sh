@@ -1,26 +1,28 @@
 #!/bin/bash
 
-echo "_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-__-⁻-_-⁻-_-⁻-_-⁻-_"
-echo "            HuNavSim Docker System"
-echo "_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-__-⁻-_-⁻-_-⁻-_-⁻-_"
-echo "Please select wich HuNavSim system you want to install:"
-echo ""
-echo "1. HuNavSim + Gazebo Classic 11 + ROS 2 Humble + PAL PMB2 robot"
-echo "2. HuNavSim + Gazebo Fortress   + ROS 2 Humble"
-echo "3. HuNavSim + Isaac Sim         + ROS 2 Humble + Carter robot"
-echo "4. HuNavSim + Webots            + ROS 2 Humble + robot? (AVAILABLE SOON!)"
-echo "5. HuNavSim + O3DE              + ROS 2 Humble + robot? (UMM.. WE ARE STILL THINKING ABOUT IT!)"
-echo ""
+echo -e "\e[36m_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-__-⁻-_-⁻-_-⁻-_-⁻-_\e[0m"
+echo -e "\e[36m            HuNavSim Docker System\e[0m"
+echo -e "\e[36m_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-__-⁻-_-⁻-_-⁻-_-⁻-_\e[0m"
+echo -e "\e[33mPlease select wich HuNavSim system you want to install:\e[0m"
+echo -e "\e[33m" # Start yellow for the rest
+
+echo -e "1. HuNavSim + Gazebo Classic 11 + ROS 2 Humble + PAL PMB2 robot"
+echo -e "2. HuNavSim + Gazebo Fortress   + ROS 2 Humble"
+echo -e "3. HuNavSim + Isaac Sim         + ROS 2 Humble + Carter robot"
+echo -e "4. HuNavSim + Webots            + ROS 2 Humble + robot? (AVAILABLE SOON!)"
+echo -e "5. HuNavSim + O3DE              + ROS 2 Humble + robot? (UMM.. WE ARE STILL THINKING ABOUT IT!)"
+echo -e "\e[0m"
 read -p "Please select an option (1-5): " option
 # Check if the input is a number between 1 and 4
 if ! [[ "$option" =~ ^[1-5]$ ]]; then
-    echo "Invalid option. Please select a number between 1 and 4."
+    echo -e "\e[31mInvalid option. Please select a number between 1 and 4.\e[0m"
     exit 1
 fi
 
 # variables
-FOLDER_NAME="hunav_gz_classic_ws"
-FOLDER2_NAME="src"
+LOCAL_DIR="gazebo_classic"
+WS_NAME="hunav_gz_classic_ws"
+SRC_NAME="src"
 CONTAINER_NAME="pmb2_hunavsim"
 DOCKERFILE_NAME="Dockerfile.hunav_gz_classic11_pmb2"
 REPO1_URL="https://github.com/robotics-upo/hunav_sim.git"
@@ -34,11 +36,11 @@ case $option in
     # HuNavSim + Gazebo Classic 11 + ROS 2 Humble + PAL PMB2 robot
     1)
         echo "You selected option 1: HuNavSim + Gazebo Classic 11 + ROS 2 Humble + PAL PMB2 robot"
-        # run the installation script for HuNavSim + Gazebo Classic 11 + ROS 2 Humble + PAL PMB2 robot
-        # run the installation script for HuNavSim + Gazebo Classic 11 + ROS 2 Humble + PAL PMB2 robot
+        # Move to the directory where the Gazebo Classic scripts are located
+        cd $LOCAL_DIR
         # check if docker is installed
         if ! command -v docker &> /dev/null; then
-            echo "Docker is not installed. Please install Docker first."
+            echo -e "\e[31mDocker is not installed. Please install Docker first.\e[0m"
             exit 1
         fi
         ;;
@@ -48,13 +50,15 @@ case $option in
     # HuNavSim + Gazebo Fortress   + ROS 2 Humble
     2) 
         echo "You selected option 2: HuNavSim + Gazebo Fortress   + ROS 2 Humble"
-        # run the installation script for HuNavSim + Gazebo Fortress   + ROS 2 Humble
+        # Move to the directory where the Gazebo Classic scripts are located
+        LOCAL_DIR="gazebo_fortress"
+        cd $LOCAL_DIR
         # check if docker is installed
         if ! command -v docker &> /dev/null; then
-            echo "Docker is not installed. Please install Docker first."
+            echo -e "\e[31mDocker is not installed. Please install Docker first.\e[0m"
             exit 1
         fi
-        FOLDER_NAME="hunav_gz_fortress_ws"
+        WS_NAME="hunav_gz_fortress_ws"
         CONTAINER_NAME="gz_fortress_hunavsim"
         DOCKERFILE_NAME="Dockerfile.hunav_gz_fortress"
         REPO2_URL="https://github.com/robotics-upo/hunav_gazebo_fortress_wrapper.git"
@@ -64,13 +68,15 @@ case $option in
     3)
         # HuNavSim + Isaac Sim         + ROS 2 Humble + Carter robot 
         echo "You selected option 3: HuNavSim + Isaac Sim + ROS 2 Humble + Carter robot"
-        # run the installation script for HuNavSim + Isaac Sim + ROS 2 Humble + Carter robot
+        # Move to the directory where the Gazebo Classic scripts are located
+        LOCAL_DIR="isaac_sim"
+        cd $LOCAL_DIR
         # check if docker is installed
         if ! command -v docker &> /dev/null; then
-            echo "Docker is not installed. Please install Docker first."
+            echo -e "\e[31mDocker is not installed. Please install Docker first.\e[0m"
             exit 1
         fi
-        FOLDER_NAME="hunav_isaac_ws"                 
+        WS_NAME="hunav_isaac_ws"                 
         CONTAINER_NAME="hunav_isaac_sim"
         DOCKERFILE_NAME="Dockerfile.hunav_isaac"     
         RUN_SCRIPT_NAME="run-hunav_isaac.bash"      
@@ -82,7 +88,7 @@ case $option in
         # run the installation script for HuNavSim + Webots            + ROS 2 Humble + robot? (AVAILABLE SOON!)
         # check if docker is installed
         if ! command -v docker &> /dev/null; then
-            echo "Docker is not installed. Please install Docker first."
+            echo -e "\e[31mDocker is not installed. Please install Docker first.\e[0m"
             exit 1
         fi
         echo "TO BE DONE!!!"
@@ -94,7 +100,7 @@ case $option in
         # run the installation script for HuNavSim + O3DE              + ROS 2 Humble + robot? (UMM.. WE ARE STILL THINKING ABOUT IT!)
         # check if docker is installed
         if ! command -v docker &> /dev/null; then
-            echo "Docker is not installed. Please install Docker first."
+            echo -e "\e[31mDocker is not installed. Please install Docker first.\e[0m"
             exit 1
         fi
         echo "TO BE DONE!!!"
@@ -109,53 +115,55 @@ esac
 
 
 # SETUP EVERYTHING
-echo "Installing HuNavSim docker system..."
+echo -e "\e[33mInstalling HuNavSim docker system...\e[0m"
 # clean the docker cache
-docker buildx prune
+#docker buildx prune
 # build the docker image
-echo "============================"
-echo "Building the docker image..."
-echo "============================"
+echo -e "\e[33m============================\e[0m"
+echo -e "\e[33mBuilding the docker image...\e[0m"
+echo -e "\e[33m============================\e[0m"
 docker build -t "$CONTAINER_NAME" -f "$DOCKERFILE_NAME" .
-echo "============================"
-echo "Creating share workspace '$FOLDER_NAME'..."
-echo "============================"
+echo -e "\e[33m============================\e[0m"
+echo -e "\e[33mCreating share workspace '$WS_NAME'...\e[0m"
+echo -e "\e[33m============================\e[0m"
 # check if already there
-if [ -d "$FOLDER_NAME" ]; then
-    echo "Folder '$FOLDER_NAME' already exists."
+if [ -d "$WS_NAME" ]; then
+    echo "Folder '$WS_NAME' already exists."
 else
     # Create the folder
-    mkdir "$FOLDER_NAME"
-    echo "Folder '$FOLDER_NAME' created successfully."
+    mkdir "$WS_NAME"
+    echo "Folder '$WS_NAME' created successfully."
 fi
 
 # Enter the directory
-cd $FOLDER_NAME
+cd $WS_NAME
 # check if already there
-if [ -d "$FOLDER2_NAME" ]; then
-    echo "Folder '$FOLDER2_NAME' already exists."
+if [ -d "$SRC_NAME" ]; then
+    echo "Folder '$SRC_NAME' already exists."
 else
     # Create the folder
-    mkdir "$FOLDER2_NAME"
-    echo "Folder '$FOLDER2_NAME' created successfully."
+    mkdir "$SRC_NAME"
+    echo "Folder '$SRC_NAME' created successfully."
 fi
 
-cd $FOLDER2_NAME
+cd $SRC_NAME
 # clone the HuNavSim repositories
-echo "================================================"
-echo "Cloning HuNav software in the share workspace..."
-echo "================================================"
+echo -e "\e[33m================================================\e[0m"
+echo -e "\e[33mCloning HuNav software in the share workspace...\e[0m"
+echo -e "\e[33m================================================\e[0m"
 git clone "$REPO1_URL" 
 echo "Repository '$REPO1_URL' has been cloned."
 git clone "$REPO2_URL" 
 echo "Repository '$REPO2_URL' has been cloned."
 
-echo "_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-__-⁻-_-⁻-_-⁻-_-⁻-_"
-echo "HuNavSim docker system has been installed successfully."
-echo "_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-__-⁻-_-⁻-_-⁻-_-⁻-_"
-echo "To run the docker image, execute: "
-echo " ./'$RUN_SCRIPT_NAME'"
-echo "_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-__-⁻-_-⁻-_-⁻-_-⁻-_"
+echo -e "\e[36m_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-__-⁻-_-⁻-_-⁻-_-⁻-_\e[0m"
+echo -e "\e[36mHuNavSim docker system has been installed successfully.\e[0m"
+echo -e "\e[36m_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-__-⁻-_-⁻-_-⁻-_-⁻-_\e[0m"
+cd ../..
+echo -e "\e[33mTo run the docker image, execute: \e[0m"
+echo -e "\e[33mcd $LOCAL_DIR\e[0m"
+echo -e "\e[33m ./$RUN_SCRIPT_NAME\e[0m"
+echo -e "\e[33m_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-__-⁻-_-⁻-_-⁻-_-⁻-_\e[0m"
 
 
 

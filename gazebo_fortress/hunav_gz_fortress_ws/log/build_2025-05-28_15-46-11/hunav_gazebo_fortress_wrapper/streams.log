@@ -1,0 +1,761 @@
+[0.161s] Invoking command in '/home/hunav_gz_fortress_ws/build/hunav_gazebo_fortress_wrapper': AMENT_PREFIX_PATH=/home/hunav_gz_fortress_ws/install/hunav_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hunav_gz_fortress_ws/install/hunav_msgs:/home/ros2_ws/install/gazebo_ros2_control_demos:/home/ros2_ws/install/ros2_control:/home/ros2_ws/install/transmission_interface:/home/ros2_ws/install/hardware_interface_testing:/home/ros2_ws/install/gazebo_ros2_control:/home/ros2_ws/install/controller_manager:/home/ros2_ws/install/ros2_control_test_assets:/home/ros2_ws/install/people_msgs:/home/ros2_ws/install/joint_limits:/home/ros2_ws/install/controller_interface:/home/ros2_ws/install/hardware_interface:/home/ros2_ws/install/controller_manager_msgs:/home/ros2_ws/install/btcpp_ros2_samples:/home/ros2_ws/install/behaviortree_ros2:/home/ros2_ws/install/btcpp_ros2_interfaces:/home/ros2_ws/install/behaviortree_cpp:/home/ros2_ws/install/rqt_controller_manager:/home/ros2_ws/install/ros2controlcli:/opt/ros/humble LD_LIBRARY_PATH=/home/hunav_gz_fortress_ws/install/hunav_msgs/lib:/home/ros2_ws/install/transmission_interface/lib:/home/ros2_ws/install/hardware_interface_testing/lib:/home/ros2_ws/install/gazebo_ros2_control/lib:/home/ros2_ws/install/controller_manager/lib:/home/ros2_ws/install/people_msgs/lib:/home/ros2_ws/install/joint_limits/lib:/home/ros2_ws/install/controller_interface/lib:/home/ros2_ws/install/hardware_interface/lib:/home/ros2_ws/install/controller_manager_msgs/lib:/home/ros2_ws/install/behaviortree_ros2/lib:/home/ros2_ws/install/btcpp_ros2_interfaces/lib:/home/ros2_ws/install/behaviortree_cpp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/hunav_gz_fortress_ws/install/hunav_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/hunav_gz_fortress_ws/src/hunav_gazebo_fortress_wrapper -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper
+[0.203s] -- The C compiler identification is GNU 11.4.0
+[0.244s] -- The CXX compiler identification is GNU 11.4.0
+[0.249s] -- Detecting C compiler ABI info
+[0.311s] -- Detecting C compiler ABI info - done
+[0.315s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.315s] -- Detecting C compile features
+[0.315s] -- Detecting C compile features - done
+[0.317s] -- Detecting CXX compiler ABI info
+[0.386s] -- Detecting CXX compiler ABI info - done
+[0.390s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.391s] -- Detecting CXX compile features
+[0.391s] -- Detecting CXX compile features - done
+[0.396s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.512s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.554s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.619s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.678s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.687s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.698s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.712s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.730s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.786s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.791s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.818s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.831s] -- Looking for pthread.h
+[0.901s] -- Looking for pthread.h - found
+[0.901s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.971s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.971s] -- Found Threads: TRUE  
+[1.017s] -- Found tinyxml2_vendor: 0.7.6 (/opt/ros/humble/share/tinyxml2_vendor/cmake)
+[1.032s] -- Found TinyXML2: /usr/lib/x86_64-linux-gnu/libtinyxml2.so  
+[1.033s] -- Found hunav_msgs: 1.0.0 (/home/hunav_gz_fortress_ws/install/hunav_msgs/share/hunav_msgs/cmake)
+[1.059s] -- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)
+[1.074s] -- Found tf2_geometry_msgs: 0.25.12 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[1.098s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.099s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.099s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.187s] -- Found ros_gz: 0.244.17 (/opt/ros/humble/share/ros_gz/cmake)
+[1.192s] -- Looking for ignition-gazebo6 -- found version 6.16.0
+[1.200s] -- Searching for dependencies of ignition-gazebo6
+[1.204s] -- Looking for sdformat12 -- found version 12.7.2
+[1.205s] -- Searching for dependencies of sdformat12
+[1.210s] -- Checking for module 'tinyxml2'
+[1.225s] --   Found tinyxml2, version 9.0.0
+[1.272s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.272s] -- Searching for dependencies of ignition-math6
+[1.277s] -- Looking for ignition-utils1 -- found version 1.5.1
+[1.278s] -- Searching for dependencies of ignition-utils1
+[1.283s] -- Looking for ignition-plugin1 -- found version 1.4.0
+[1.283s] -- Searching for dependencies of ignition-plugin1
+[1.284s] -- Searching for <ignition-plugin1> component [loader]
+[1.289s] -- Looking for ignition-plugin1-loader -- found version 1.4.0
+[1.289s] -- Searching for dependencies of ignition-plugin1-loader
+[1.289s] -- Searching for <ignition-plugin1> component [register]
+[1.294s] -- Looking for ignition-plugin1-register -- found version 1.4.0
+[1.294s] -- Searching for dependencies of ignition-plugin1-register
+[1.299s] -- Looking for ignition-transport11 -- found version 11.4.1
+[1.300s] -- Searching for dependencies of ignition-transport11
+[1.325s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[1.340s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[1.344s] -- Checking for module 'libzmq >= 4'
+[1.358s] --   Found libzmq , version 4.3.4
+[1.391s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[1.396s] -- Checking for module 'uuid'
+[1.407s] --   Found uuid, version 2.37.2
+[1.439s] -- Found UUID: TRUE  
+[1.439s] -- Looking for ignition-utils1 -- found version 1.5.1
+[1.439s] -- Searching for dependencies of ignition-utils1
+[1.439s] -- Searching for <ignition-utils1> component [cli]
+[1.444s] -- Looking for ignition-utils1-cli -- found version 1.5.1
+[1.444s] -- Searching for dependencies of ignition-utils1-cli
+[1.449s] -- Looking for ignition-msgs8 -- found version 8.7.0
+[1.450s] -- Searching for dependencies of ignition-msgs8
+[1.474s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[1.475s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.487s] -- Searching for <ignition-transport11> component [log]
+[1.494s] -- Looking for ignition-transport11-log -- found version 11.4.1
+[1.494s] -- Searching for dependencies of ignition-transport11-log
+[1.494s] -- Searching for <ignition-transport11> component [parameters]
+[1.499s] -- Looking for ignition-transport11-parameters -- found version 11.4.1
+[1.500s] -- Searching for dependencies of ignition-transport11-parameters
+[1.500s] -- Looking for ignition-msgs8 -- found version 8.7.0
+[1.505s] -- Looking for ignition-common4 -- found version 4.7.0
+[1.506s] -- Searching for dependencies of ignition-common4
+[1.506s] -- Looking for dlfcn.h - found
+[1.507s] -- Looking for libdl - found
+[1.508s] -- Found DL: TRUE  
+[1.515s] -- Searching for <ignition-common4> component [profiler]
+[1.520s] -- Looking for ignition-common4-profiler -- found version 4.7.0
+[1.520s] -- Searching for dependencies of ignition-common4-profiler
+[1.520s] -- Searching for <ignition-common4> component [events]
+[1.525s] -- Looking for ignition-common4-events -- found version 4.7.0
+[1.526s] -- Searching for dependencies of ignition-common4-events
+[1.526s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.526s] -- Searching for <ignition-common4> component [av]
+[1.531s] -- Looking for ignition-common4-av -- found version 4.7.0
+[1.531s] -- Searching for dependencies of ignition-common4-av
+[1.536s] -- Checking for module 'libswscale'
+[1.549s] --   Found libswscale, version 5.9.100
+[1.586s] -- Found SWSCALE: TRUE  
+[1.590s] -- Checking for module 'libavdevice >= 56.4.100'
+[1.604s] --   Found libavdevice , version 58.13.100
+[1.639s] -- Found AVDEVICE: TRUE (Required is at least version "56.4.100") 
+[1.643s] -- Checking for module 'libavformat'
+[1.658s] --   Found libavformat, version 58.76.100
+[1.695s] -- Found AVFORMAT: TRUE  
+[1.700s] -- Checking for module 'libavcodec'
+[1.714s] --   Found libavcodec, version 58.134.100
+[1.754s] -- Found AVCODEC: TRUE  
+[1.760s] -- Checking for module 'libavutil'
+[1.775s] --   Found libavutil, version 56.70.100
+[1.812s] -- Found AVUTIL: TRUE  
+[1.817s] -- Looking for ignition-fuel_tools7 -- found version 7.3.0
+[1.818s] -- Searching for dependencies of ignition-fuel_tools7
+[1.901s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[1.911s] -- Checking for module 'jsoncpp'
+[1.925s] --   Found jsoncpp, version 1.9.5
+[1.961s] -- Found JSONCPP: TRUE  
+[1.966s] -- Checking for module 'libzip'
+[1.980s] --   Found libzip, version 1.7.3
+[2.014s] -- Found ZIP: TRUE  
+[2.014s] -- Looking for ignition-common4 -- found version 4.7.0
+[2.014s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.014s] -- Looking for ignition-msgs8 -- found version 8.7.0
+[2.020s] -- Looking for ignition-gui6 -- found version 6.8.0
+[2.020s] -- Searching for dependencies of ignition-gui6
+[2.048s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.049s] -- Looking for ignition-common4 -- found version 4.7.0
+[2.049s] -- Looking for ignition-plugin1 -- found version 1.4.0
+[2.049s] -- Looking for ignition-transport11 -- found version 11.4.1
+[2.054s] -- Looking for ignition-rendering6 -- found version 6.6.3
+[2.054s] -- Searching for dependencies of ignition-rendering6
+[2.054s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.055s] -- Searching for dependencies of ignition-math6
+[2.055s] -- Searching for <ignition-math6> component [eigen3]
+[2.062s] -- Looking for ignition-math6-eigen3 -- found version 6.15.1
+[2.062s] -- Searching for dependencies of ignition-math6-eigen3
+[2.063s] -- Looking for ignition-common4 -- found version 4.7.0
+[2.064s] -- Searching for dependencies of ignition-common4
+[2.064s] -- Looking for dlfcn.h - found
+[2.064s] -- Looking for libdl - found
+[2.072s] -- Searching for <ignition-common4> component [graphics]
+[2.077s] -- Looking for ignition-common4-graphics -- found version 4.7.0
+[2.077s] -- Searching for dependencies of ignition-common4-graphics
+[2.077s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.078s] -- Looking for ignition-utils1 -- found version 1.5.1
+[2.078s] -- Searching for <ignition-common4> component [events]
+[2.079s] -- Looking for ignition-plugin1 -- found version 1.4.0
+[2.079s] -- Searching for dependencies of ignition-plugin1
+[2.079s] -- Searching for <ignition-plugin1> component [all]
+[2.084s] -- Looking for all libraries of ignition-plugin1 -- found version 1.4.0
+[2.084s] -- Looking for ignition-plugin1 -- found version 1.4.0
+[2.086s] -- Looking for ignition-msgs8 -- found version 8.7.0
+[2.108s] -- Looking for ignition-physics5 -- found version 5.3.2
+[2.108s] -- Searching for dependencies of ignition-physics5
+[2.108s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.109s] -- Looking for ignition-plugin1 -- found version 1.4.0
+[2.109s] -- Looking for ignition-utils1 -- found version 1.5.1
+[2.110s] -- Searching for <ignition-physics5> component [heightmap]
+[2.114s] -- Looking for ignition-physics5-heightmap -- found version 5.3.2
+[2.115s] -- Searching for dependencies of ignition-physics5-heightmap
+[2.115s] -- Looking for ignition-common4 -- found version 4.7.0
+[2.115s] -- Searching for <ignition-physics5> component [mesh]
+[2.120s] -- Looking for ignition-physics5-mesh -- found version 5.3.2
+[2.120s] -- Searching for dependencies of ignition-physics5-mesh
+[2.120s] -- Looking for ignition-common4 -- found version 4.7.0
+[2.121s] -- Searching for <ignition-physics5> component [sdf]
+[2.126s] -- Looking for ignition-physics5-sdf -- found version 5.3.2
+[2.126s] -- Searching for dependencies of ignition-physics5-sdf
+[2.126s] -- Looking for sdformat12 -- found version 12.7.2
+[2.131s] -- Looking for ignition-sensors6 -- found version 6.8.0
+[2.132s] -- Searching for dependencies of ignition-sensors6
+[2.153s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[2.154s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.154s] -- Looking for ignition-common4 -- found version 4.7.0
+[2.154s] -- Looking for ignition-transport11 -- found version 11.4.1
+[2.154s] -- Looking for ignition-rendering6 -- found version 6.6.3
+[2.155s] -- Looking for ignition-msgs8 -- found version 8.7.0
+[2.155s] -- Looking for sdformat12 -- found version 12.7.2
+[2.155s] -- Searching for <ignition-sensors6> component [air_pressure]
+[2.162s] -- Looking for ignition-sensors6-air_pressure -- found version 6.8.0
+[2.163s] -- Searching for dependencies of ignition-sensors6-air_pressure
+[2.163s] -- Searching for <ignition-sensors6> component [altimeter]
+[2.168s] -- Looking for ignition-sensors6-altimeter -- found version 6.8.0
+[2.169s] -- Searching for dependencies of ignition-sensors6-altimeter
+[2.169s] -- Searching for <ignition-sensors6> component [imu]
+[2.175s] -- Looking for ignition-sensors6-imu -- found version 6.8.0
+[2.177s] -- Searching for dependencies of ignition-sensors6-imu
+[2.177s] -- Searching for <ignition-sensors6> component [force_torque]
+[2.180s] -- Looking for ignition-sensors6-force_torque -- found version 6.8.0
+[2.180s] -- Searching for dependencies of ignition-sensors6-force_torque
+[2.181s] -- Searching for <ignition-sensors6> component [logical_camera]
+[2.186s] -- Looking for ignition-sensors6-logical_camera -- found version 6.8.0
+[2.186s] -- Searching for dependencies of ignition-sensors6-logical_camera
+[2.187s] -- Searching for <ignition-sensors6> component [magnetometer]
+[2.192s] -- Looking for ignition-sensors6-magnetometer -- found version 6.8.0
+[2.192s] -- Searching for dependencies of ignition-sensors6-magnetometer
+[2.192s] -- Searching for <ignition-sensors6> component [navsat]
+[2.197s] -- Looking for ignition-sensors6-navsat -- found version 6.8.0
+[2.198s] -- Searching for dependencies of ignition-sensors6-navsat
+[2.198s] -- Searching for <ignition-sensors6> component [rendering]
+[2.203s] -- Looking for ignition-sensors6-rendering -- found version 6.8.0
+[2.203s] -- Searching for dependencies of ignition-sensors6-rendering
+[2.204s] -- Searching for <ignition-sensors6> component [lidar]
+[2.209s] -- Looking for ignition-sensors6-lidar -- found version 6.8.0
+[2.209s] -- Searching for dependencies of ignition-sensors6-lidar
+[2.209s] -- Looking for ignition-sensors6 -- found version 6.8.0
+[2.210s] -- Searching for <ignition-sensors6> component [gpu_lidar]
+[2.215s] -- Looking for ignition-sensors6-gpu_lidar -- found version 6.8.0
+[2.215s] -- Searching for dependencies of ignition-sensors6-gpu_lidar
+[2.215s] -- Looking for ignition-sensors6 -- found version 6.8.0
+[2.216s] -- Searching for <ignition-sensors6> component [camera]
+[2.220s] -- Looking for ignition-sensors6-camera -- found version 6.8.0
+[2.221s] -- Searching for dependencies of ignition-sensors6-camera
+[2.221s] -- Looking for ignition-sensors6 -- found version 6.8.0
+[2.221s] -- Searching for <ignition-sensors6> component [boundingbox_camera]
+[2.226s] -- Looking for ignition-sensors6-boundingbox_camera -- found version 6.8.0
+[2.227s] -- Searching for dependencies of ignition-sensors6-boundingbox_camera
+[2.227s] -- Searching for <ignition-sensors6> component [segmentation_camera]
+[2.232s] -- Looking for ignition-sensors6-segmentation_camera -- found version 6.8.0
+[2.232s] -- Searching for dependencies of ignition-sensors6-segmentation_camera
+[2.232s] -- Searching for <ignition-sensors6> component [depth_camera]
+[2.237s] -- Looking for ignition-sensors6-depth_camera -- found version 6.8.0
+[2.238s] -- Searching for dependencies of ignition-sensors6-depth_camera
+[2.238s] -- Looking for ignition-sensors6 -- found version 6.8.0
+[2.238s] -- Searching for <ignition-sensors6> component [rgbd_camera]
+[2.243s] -- Looking for ignition-sensors6-rgbd_camera -- found version 6.8.0
+[2.244s] -- Searching for dependencies of ignition-sensors6-rgbd_camera
+[2.244s] -- Looking for ignition-sensors6 -- found version 6.8.0
+[2.244s] -- Searching for <ignition-sensors6> component [thermal_camera]
+[2.249s] -- Looking for ignition-sensors6-thermal_camera -- found version 6.8.0
+[2.250s] -- Searching for dependencies of ignition-sensors6-thermal_camera
+[2.250s] -- Looking for ignition-sensors6 -- found version 6.8.0
+[2.251s] -- Looking for ignition-rendering6 -- found version 6.6.3
+[2.251s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.258s] -- Looking for ignition-utils1 -- found version 1.5.1
+[2.286s] -- Looking for ignition-plugin1 -- found version 1.4.0
+[2.286s] -- Looking for ignition-plugin1 - found
+[2.286s] 
+[2.367s] -- Configuring done
+[2.386s] -- Generating done
+[2.391s] -- Build files have been written to: /home/hunav_gz_fortress_ws/build/hunav_gazebo_fortress_wrapper
+[2.403s] Invoked command in '/home/hunav_gz_fortress_ws/build/hunav_gazebo_fortress_wrapper' returned '0': AMENT_PREFIX_PATH=/home/hunav_gz_fortress_ws/install/hunav_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hunav_gz_fortress_ws/install/hunav_msgs:/home/ros2_ws/install/gazebo_ros2_control_demos:/home/ros2_ws/install/ros2_control:/home/ros2_ws/install/transmission_interface:/home/ros2_ws/install/hardware_interface_testing:/home/ros2_ws/install/gazebo_ros2_control:/home/ros2_ws/install/controller_manager:/home/ros2_ws/install/ros2_control_test_assets:/home/ros2_ws/install/people_msgs:/home/ros2_ws/install/joint_limits:/home/ros2_ws/install/controller_interface:/home/ros2_ws/install/hardware_interface:/home/ros2_ws/install/controller_manager_msgs:/home/ros2_ws/install/btcpp_ros2_samples:/home/ros2_ws/install/behaviortree_ros2:/home/ros2_ws/install/btcpp_ros2_interfaces:/home/ros2_ws/install/behaviortree_cpp:/home/ros2_ws/install/rqt_controller_manager:/home/ros2_ws/install/ros2controlcli:/opt/ros/humble LD_LIBRARY_PATH=/home/hunav_gz_fortress_ws/install/hunav_msgs/lib:/home/ros2_ws/install/transmission_interface/lib:/home/ros2_ws/install/hardware_interface_testing/lib:/home/ros2_ws/install/gazebo_ros2_control/lib:/home/ros2_ws/install/controller_manager/lib:/home/ros2_ws/install/people_msgs/lib:/home/ros2_ws/install/joint_limits/lib:/home/ros2_ws/install/controller_interface/lib:/home/ros2_ws/install/hardware_interface/lib:/home/ros2_ws/install/controller_manager_msgs/lib:/home/ros2_ws/install/behaviortree_ros2/lib:/home/ros2_ws/install/btcpp_ros2_interfaces/lib:/home/ros2_ws/install/behaviortree_cpp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/hunav_gz_fortress_ws/install/hunav_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/hunav_gz_fortress_ws/src/hunav_gazebo_fortress_wrapper -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper
+[2.405s] Invoking command in '/home/hunav_gz_fortress_ws/build/hunav_gazebo_fortress_wrapper': AMENT_PREFIX_PATH=/home/hunav_gz_fortress_ws/install/hunav_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hunav_gz_fortress_ws/install/hunav_msgs:/home/ros2_ws/install/gazebo_ros2_control_demos:/home/ros2_ws/install/ros2_control:/home/ros2_ws/install/transmission_interface:/home/ros2_ws/install/hardware_interface_testing:/home/ros2_ws/install/gazebo_ros2_control:/home/ros2_ws/install/controller_manager:/home/ros2_ws/install/ros2_control_test_assets:/home/ros2_ws/install/people_msgs:/home/ros2_ws/install/joint_limits:/home/ros2_ws/install/controller_interface:/home/ros2_ws/install/hardware_interface:/home/ros2_ws/install/controller_manager_msgs:/home/ros2_ws/install/btcpp_ros2_samples:/home/ros2_ws/install/behaviortree_ros2:/home/ros2_ws/install/btcpp_ros2_interfaces:/home/ros2_ws/install/behaviortree_cpp:/home/ros2_ws/install/rqt_controller_manager:/home/ros2_ws/install/ros2controlcli:/opt/ros/humble LD_LIBRARY_PATH=/home/hunav_gz_fortress_ws/install/hunav_msgs/lib:/home/ros2_ws/install/transmission_interface/lib:/home/ros2_ws/install/hardware_interface_testing/lib:/home/ros2_ws/install/gazebo_ros2_control/lib:/home/ros2_ws/install/controller_manager/lib:/home/ros2_ws/install/people_msgs/lib:/home/ros2_ws/install/joint_limits/lib:/home/ros2_ws/install/controller_interface/lib:/home/ros2_ws/install/hardware_interface/lib:/home/ros2_ws/install/controller_manager_msgs/lib:/home/ros2_ws/install/behaviortree_ros2/lib:/home/ros2_ws/install/btcpp_ros2_interfaces/lib:/home/ros2_ws/install/behaviortree_cpp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/hunav_gz_fortress_ws/install/hunav_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/hunav_gz_fortress_ws/build/hunav_gazebo_fortress_wrapper -- -j16 -l16
+[2.464s] [ 25%] [32mBuilding CXX object CMakeFiles/HuNavSystemPluginIGN.dir/src/HuNavSystemPlugin_fortress.cpp.o[0m
+[2.469s] [ 50%] [32mBuilding CXX object CMakeFiles/hunav_gazebo_world_generator.dir/src/WorldGenerator.cpp.o[0m
+[5.806s] [ 75%] [32m[1mLinking CXX executable hunav_gazebo_world_generator[0m
+[5.961s] [ 75%] Built target hunav_gazebo_world_generator
+[8.593s] [01m[K/home/hunav_gz_fortress_ws/src/hunav_gazebo_fortress_wrapper/src/HuNavSystemPlugin_fortress.cpp:[m[K In member function ‘[01m[Kvoid HuNavSystemPluginIGN::fixActorHeight(const Agent&, ignition::math::v6::Pose3d&)[m[K’:
+[8.593s] [01m[K/home/hunav_gz_fortress_ws/src/hunav_gazebo_fortress_wrapper/src/HuNavSystemPlugin_fortress.cpp:983:73:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kag[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[8.593s]   983 | void HuNavSystemPluginIGN::fixActorHeight([01;35m[Kconst hunav_msgs::msg::Agent& ag[m[K, gz::math::Pose3d& actorPose)
+[8.593s]       |                                           [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[8.602s] [01m[K/home/hunav_gz_fortress_ws/src/hunav_gazebo_fortress_wrapper/src/HuNavSystemPlugin_fortress.cpp:[m[K In member function ‘[01m[Kvirtual void HuNavSystemPluginIGN::PreUpdate(const ignition::gazebo::v6::UpdateInfo&, ignition::gazebo::v6::EntityComponentManager&)[m[K’:
+[8.602s] [01m[K/home/hunav_gz_fortress_ws/src/hunav_gazebo_fortress_wrapper/src/HuNavSystemPlugin_fortress.cpp:1366:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdist[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[8.602s]  1366 |         double [01;35m[Kdist[m[K = sqrt(pow(goalx - currx, 2) + pow(goaly - curry, 2));
+[8.602s]       |                [01;35m[K^~~~[m[K
+[13.087s] [100%] [32m[1mLinking CXX shared library libHuNavSystemPluginIGN.so[0m
+[13.513s] [100%] Built target HuNavSystemPluginIGN
+[13.523s] Invoked command in '/home/hunav_gz_fortress_ws/build/hunav_gazebo_fortress_wrapper' returned '0': AMENT_PREFIX_PATH=/home/hunav_gz_fortress_ws/install/hunav_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hunav_gz_fortress_ws/install/hunav_msgs:/home/ros2_ws/install/gazebo_ros2_control_demos:/home/ros2_ws/install/ros2_control:/home/ros2_ws/install/transmission_interface:/home/ros2_ws/install/hardware_interface_testing:/home/ros2_ws/install/gazebo_ros2_control:/home/ros2_ws/install/controller_manager:/home/ros2_ws/install/ros2_control_test_assets:/home/ros2_ws/install/people_msgs:/home/ros2_ws/install/joint_limits:/home/ros2_ws/install/controller_interface:/home/ros2_ws/install/hardware_interface:/home/ros2_ws/install/controller_manager_msgs:/home/ros2_ws/install/btcpp_ros2_samples:/home/ros2_ws/install/behaviortree_ros2:/home/ros2_ws/install/btcpp_ros2_interfaces:/home/ros2_ws/install/behaviortree_cpp:/home/ros2_ws/install/rqt_controller_manager:/home/ros2_ws/install/ros2controlcli:/opt/ros/humble LD_LIBRARY_PATH=/home/hunav_gz_fortress_ws/install/hunav_msgs/lib:/home/ros2_ws/install/transmission_interface/lib:/home/ros2_ws/install/hardware_interface_testing/lib:/home/ros2_ws/install/gazebo_ros2_control/lib:/home/ros2_ws/install/controller_manager/lib:/home/ros2_ws/install/people_msgs/lib:/home/ros2_ws/install/joint_limits/lib:/home/ros2_ws/install/controller_interface/lib:/home/ros2_ws/install/hardware_interface/lib:/home/ros2_ws/install/controller_manager_msgs/lib:/home/ros2_ws/install/behaviortree_ros2/lib:/home/ros2_ws/install/btcpp_ros2_interfaces/lib:/home/ros2_ws/install/behaviortree_cpp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/hunav_gz_fortress_ws/install/hunav_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/hunav_gz_fortress_ws/build/hunav_gazebo_fortress_wrapper -- -j16 -l16
+[13.525s] Invoking command in '/home/hunav_gz_fortress_ws/build/hunav_gazebo_fortress_wrapper': AMENT_PREFIX_PATH=/home/hunav_gz_fortress_ws/install/hunav_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hunav_gz_fortress_ws/install/hunav_msgs:/home/ros2_ws/install/gazebo_ros2_control_demos:/home/ros2_ws/install/ros2_control:/home/ros2_ws/install/transmission_interface:/home/ros2_ws/install/hardware_interface_testing:/home/ros2_ws/install/gazebo_ros2_control:/home/ros2_ws/install/controller_manager:/home/ros2_ws/install/ros2_control_test_assets:/home/ros2_ws/install/people_msgs:/home/ros2_ws/install/joint_limits:/home/ros2_ws/install/controller_interface:/home/ros2_ws/install/hardware_interface:/home/ros2_ws/install/controller_manager_msgs:/home/ros2_ws/install/btcpp_ros2_samples:/home/ros2_ws/install/behaviortree_ros2:/home/ros2_ws/install/btcpp_ros2_interfaces:/home/ros2_ws/install/behaviortree_cpp:/home/ros2_ws/install/rqt_controller_manager:/home/ros2_ws/install/ros2controlcli:/opt/ros/humble LD_LIBRARY_PATH=/home/hunav_gz_fortress_ws/install/hunav_msgs/lib:/home/ros2_ws/install/transmission_interface/lib:/home/ros2_ws/install/hardware_interface_testing/lib:/home/ros2_ws/install/gazebo_ros2_control/lib:/home/ros2_ws/install/controller_manager/lib:/home/ros2_ws/install/people_msgs/lib:/home/ros2_ws/install/joint_limits/lib:/home/ros2_ws/install/controller_interface/lib:/home/ros2_ws/install/hardware_interface/lib:/home/ros2_ws/install/controller_manager_msgs/lib:/home/ros2_ws/install/behaviortree_ros2/lib:/home/ros2_ws/install/btcpp_ros2_interfaces/lib:/home/ros2_ws/install/behaviortree_cpp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/hunav_gz_fortress_ws/install/hunav_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/hunav_gz_fortress_ws/build/hunav_gazebo_fortress_wrapper
+[13.531s] -- Install configuration: ""
+[13.531s] -- Execute custom install script
+[13.532s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/lib/libHuNavSystemPluginIGN.so
+[13.540s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/lib/hunav_gazebo_fortress_wrapper/hunav_gazebo_world_generator
+[13.548s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/include/hunav_gazebo_fortress_wrapper/HuNavActorPlugin_fortress.h
+[13.555s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/include/hunav_gazebo_fortress_wrapper/HuNavSystemPlugin_fortress.h
+[13.563s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/include/hunav_gazebo_fortress_wrapper/WorldGenerator.hpp
+[13.571s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/launch/cafe_fortress_test.launch.py
+[13.579s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/launch/example_cafe_fortress.launch.py
+[13.592s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/cafe_test.sdf
+[13.603s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/02_01-walk.bvh
+[13.611s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/02_07.bvh
+[13.619s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/05_02.bvh
+[13.627s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/07_01-walk.bvh
+[13.635s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/07_04-slow_walk.bvh
+[13.642s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/07_05-slow_walk.bvh
+[13.650s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/08_08-walk2.bvh
+[13.657s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/120_19-walk_slow.bvh
+[13.665s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/137_28-normal_wait.bvh
+[13.672s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/13_14-laugh.bvh
+[13.680s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/141_16-wave_hello.bvh
+[13.687s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/141_20-waiting.bvh
+[13.697s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/142_01-walk_childist.bvh
+[13.705s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/142_04-walk_cool.bvh
+[13.712s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/142_08-walk_happy.bvh
+[13.720s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/142_16-walk_scared.bvh
+[13.728s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/142_17-walk_scared.bvh
+[13.735s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/142_19-walk_shy.bvh
+[13.743s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/17_01-walk_with_anger.bvh
+[13.751s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/69_02_walk_forward.bvh
+[13.758s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_AirconditionerA_01/materials/textures/aws_AirconditionerA_01.png
+[13.766s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_AirconditionerA_01/meshes/aws_AirconditionerA_01_collision.DAE
+[13.773s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_AirconditionerA_01/meshes/aws_AirconditionerA_01_visual.DAE
+[13.782s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_AirconditionerA_01/model.config
+[13.789s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_AirconditionerB_01/materials/textures/aws_AirconditionerB_01.png
+[13.800s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_AirconditionerB_01/meshes/aws_AirconditionerB_01_collision.DAE
+[13.808s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_AirconditionerB_01/meshes/aws_AirconditionerB_01_visual.DAE
+[13.816s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_AirconditionerB_01/model.config
+[13.824s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_BalconyTable_01/materials/textures/aws_BalconyTable_01.png
+[13.832s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_BalconyTable_01/meshes/aws_BalconyTable_01_collision.DAE
+[13.840s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_BalconyTable_01/meshes/aws_BalconyTable_01_visual.DAE
+[13.849s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_BalconyTable_01/model.config
+[13.857s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Ball_01/materials/textures/aws_Ball_01.png
+[13.865s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Ball_01/meshes/aws_Ball_01_collision.DAE
+[13.874s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Ball_01/meshes/aws_Ball_01_visual.DAE
+[13.884s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Ball_01/model.config
+[13.893s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Bed_01/materials/textures/aws_BedA_01.png
+[13.902s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Bed_01/materials/textures/aws_BedB_01.png
+[13.909s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Bed_01/materials/textures/aws_BedC_01.png
+[13.916s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Bed_01/materials/textures/aws_Bed_01.png
+[13.925s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Bed_01/meshes/aws_Bed_01_collision.DAE
+[13.933s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Bed_01/meshes/aws_Bed_01_visual.DAE
+[13.942s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Bed_01/model.config
+[13.950s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Board_01/materials/textures/aws_Board_01.png
+[13.958s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Board_01/meshes/aws_Board_01_collision.DAE
+[13.965s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Board_01/meshes/aws_Board_01_visual.DAE
+[13.973s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Board_01/model.config
+[13.979s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Carpet_01/materials/textures/aws_Carpet_01.png
+[13.986s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Carpet_01/meshes/aws_Carpet_01_collision.DAE
+[13.996s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Carpet_01/meshes/aws_Carpet_01_visual.DAE
+[14.004s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Carpet_01/model.config
+[14.011s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_ChairA_01/materials/textures/aws_ChairA_01.png
+[14.019s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_ChairA_01/meshes/aws_ChairA_01_collision.DAE
+[14.028s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_ChairA_01/meshes/aws_ChairA_01_visual.DAE
+[14.037s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_ChairA_01/model.config
+[14.046s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_ChairD_01/materials/textures/aws_ChairD_01.png
+[14.054s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_ChairD_01/meshes/aws_ChairD_01_collision.DAE
+[14.062s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_ChairD_01/meshes/aws_ChairD_01_visual.DAE
+[14.070s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_ChairD_01/model.config
+[14.079s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Chandelier_01/materials/textures/aws_Chandelier_01.png
+[14.086s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Chandelier_01/meshes/aws_Chandelier_01.DAE
+[14.098s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Chandelier_01/meshes/aws_Chandelier_01_collision.DAE
+[14.105s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Chandelier_01/meshes/aws_Chandelier_01_visual.DAE
+[14.113s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Chandelier_01/model.config
+[14.122s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_CoffeeTable_01/materials/textures/aws_CoffeeTable_01.png
+[14.130s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_CoffeeTable_01/meshes/aws_CoffeeTable_01_collision.DAE
+[14.138s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_CoffeeTable_01/meshes/aws_CoffeeTable_01_visual.DAE
+[14.147s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_CoffeeTable_01/model.config
+[14.155s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_CookingBench_01/materials/textures/aws_CookingBench_01.png
+[14.163s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_CookingBench_01/meshes/aws_CookingBench_01.DAE
+[14.170s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_CookingBench_01/meshes/aws_CookingBench_01_collision.DAE
+[14.178s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_CookingBench_01/meshes/aws_CookingBench_01_visual.DAE
+[14.187s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_CookingBench_01/model.config
+[14.197s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Curtain_01/materials/textures/aws_Curtain_01.png
+[14.206s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Curtain_01/meshes/aws_Curtain_01_collision.DAE
+[14.214s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Curtain_01/meshes/aws_Curtain_01_visual.DAE
+[14.221s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Curtain_01/model.config
+[14.229s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitA_01/materials/textures/DeskPortraitA_01.jpg
+[14.237s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitA_01/materials/textures/aws_DeskPortraitA_01.png
+[14.245s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitA_01/materials/textures/aws_DeskPortraitA_02.png
+[14.252s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitA_01/meshes/aws_DeskPortraitA_01_collision.DAE
+[14.260s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitA_01/meshes/aws_DeskPortraitA_01_visual.DAE
+[14.268s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitA_01/model.config
+[14.277s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitA_02/materials/textures/DeskPortraitA_02.jpg
+[14.284s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitA_02/materials/textures/aws_DeskPortraitA_01.png
+[14.293s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitA_02/materials/textures/aws_DeskPortraitA_02.png
+[14.304s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitA_02/meshes/aws_DeskPortraitA_01_collision.DAE
+[14.313s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitA_02/meshes/aws_DeskPortraitA_01_visual.DAE
+[14.321s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitA_02/model.config
+[14.329s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitB_01/materials/textures/DeskPortraitB_01.jpg
+[14.336s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitB_01/materials/textures/aws_DeskPortraitB_01.png
+[14.344s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitB_01/materials/textures/aws_DeskPortraitB_02.png
+[14.353s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitB_01/meshes/aws_DeskPortraitB_01_collision.DAE
+[14.359s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitB_01/meshes/aws_DeskPortraitB_01_visual.DAE
+[14.367s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitB_01/model.config
+[14.374s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitB_02/materials/textures/DeskPortraitB_02.jpg
+[14.381s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitB_02/materials/textures/aws_DeskPortraitB_01.png
+[14.388s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitB_02/materials/textures/aws_DeskPortraitB_02.png
+[14.398s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitB_02/meshes/aws_DeskPortraitB_01_collision.DAE
+[14.407s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitB_02/meshes/aws_DeskPortraitB_01_visual.DAE
+[14.415s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitB_02/model.config
+[14.423s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitC_01/materials/textures/DeskPortraitC_01.jpg
+[14.431s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitC_01/materials/textures/aws_DeskPortraitC_01.png
+[14.438s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitC_01/materials/textures/aws_DeskPortraitC_02.png
+[14.445s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitC_01/meshes/aws_DeskPortraitC_01_collision.DAE
+[14.454s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitC_01/meshes/aws_DeskPortraitC_01_visual.DAE
+[14.462s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitC_01/model.config
+[14.469s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitC_02/materials/textures/DeskPortraitC_02.jpg
+[14.477s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitC_02/materials/textures/aws_DeskPortraitC_01.png
+[14.485s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitC_02/materials/textures/aws_DeskPortraitC_02.png
+[14.493s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitC_02/meshes/aws_DeskPortraitC_01_collision.DAE
+[14.504s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitC_02/meshes/aws_DeskPortraitC_01_visual.DAE
+[14.511s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitC_02/model.config
+[14.520s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitD_01/materials/textures/DeskPortraitD_01.jpg
+[14.527s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitD_01/materials/textures/aws_DeskPortraitD_01.png
+[14.535s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitD_01/materials/textures/aws_DeskPortraitD_02.png
+[14.542s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitD_01/meshes/aws_DeskPortraitD_01_collision.DAE
+[14.551s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitD_01/meshes/aws_DeskPortraitD_01_visual.DAE
+[14.558s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitD_01/model.config
+[14.566s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitD_02/materials/textures/DeskPortraitD_02.jpg
+[14.573s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitD_02/materials/textures/aws_DeskPortraitD_01.png
+[14.584s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitD_02/materials/textures/aws_DeskPortraitD_02.png
+[14.592s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitD_02/meshes/aws_DeskPortraitD_01_collision.DAE
+[14.602s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitD_02/meshes/aws_DeskPortraitD_01_visual.DAE
+[14.611s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitD_02/model.config
+[14.621s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitD_03/materials/textures/DeskPortraitD_03.jpg
+[14.629s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitD_03/materials/textures/aws_DeskPortraitD_01.png
+[14.636s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitD_03/materials/textures/aws_DeskPortraitD_02.png
+[14.645s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitD_03/meshes/aws_DeskPortraitD_01_collision.DAE
+[14.653s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitD_03/meshes/aws_DeskPortraitD_01_visual.DAE
+[14.660s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitD_03/model.config
+[14.668s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitD_04/materials/textures/DeskPortraitD_04.jpg
+[14.674s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitD_04/materials/textures/aws_DeskPortraitD_01.png
+[14.683s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitD_04/materials/textures/aws_DeskPortraitD_02.png
+[14.690s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitD_04/meshes/aws_DeskPortraitD_01_collision.DAE
+[14.701s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitD_04/meshes/aws_DeskPortraitD_01_visual.DAE
+[14.710s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_DeskPortraitD_04/model.config
+[14.718s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Door_01/materials/textures/aws_Door_01.png
+[14.726s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Door_01/meshes/aws_Door_01_collision.DAE
+[14.734s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Door_01/meshes/aws_Door_01_visual.DAE
+[14.743s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Door_01/model.config
+[14.751s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Dumbbell_01/materials/textures/aws_Dumbbell_01.png
+[14.759s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Dumbbell_01/meshes/aws_Dumbbell_01_collision.DAE
+[14.766s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Dumbbell_01/meshes/aws_Dumbbell_01_visual.DAE
+[14.774s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Dumbbell_01/model.config
+[14.782s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_FitnessEquipment_01/materials/textures/aws_FitnessEquipment_01.png
+[14.789s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_FitnessEquipment_01/meshes/aws_FitnessEquipment_01_collision.DAE
+[14.800s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_FitnessEquipment_01/meshes/aws_FitnessEquipment_01_visual.DAE
+[14.808s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_FitnessEquipment_01/model.config
+[14.817s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_FloorB_01/materials/textures/aws_FloorB_01.png
+[14.825s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_FloorB_01/meshes/aws_FloorB_01_collision.DAE
+[14.834s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_FloorB_01/meshes/aws_FloorB_01_visual.DAE
+[14.842s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_FloorB_01/model.config
+[14.849s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_FoldingDoor_01/materials/textures/aws_FoldingDoor_01.png
+[14.858s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_FoldingDoor_01/meshes/aws_FoldingDoor_01_collision.DAE
+[14.865s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_FoldingDoor_01/meshes/aws_FoldingDoor_01_visual.DAE
+[14.873s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_FoldingDoor_01/model.config
+[14.881s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_FoldingDoor_02/materials/textures/aws_FoldingDoor_02.png
+[14.888s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_FoldingDoor_02/meshes/aws_FoldingDoor_02_collision.DAE
+[14.898s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_FoldingDoor_02/meshes/aws_FoldingDoor_02_visual.DAE
+[14.907s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_FoldingDoor_02/model.config
+[14.915s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Handle_01/materials/textures/aws_Handle_01.png
+[14.924s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Handle_01/meshes/aws_Handle_01_collision.DAE
+[14.931s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Handle_01/meshes/aws_Handle_01_visual.DAE
+[14.940s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Handle_01/model.config
+[14.947s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_HouseWallB_01/materials/textures/aws_HouseWallB_01.png
+[14.954s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_HouseWallB_01/meshes/aws_HouseWallB_01_collision.DAE
+[14.962s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_HouseWallB_01/meshes/aws_HouseWallB_01_visual.DAE
+[14.969s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_HouseWallB_01/model.config
+[14.977s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_KitchenCabinet_01/materials/textures/aws_KitchenCabinet_01.png
+[14.984s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_KitchenCabinet_01/meshes/aws_KitchenCabinet_01_collision.DAE
+[14.992s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_KitchenCabinet_01/meshes/aws_KitchenCabinet_01_visual.DAE
+[15.003s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_KitchenCabinet_01/model.config
+[15.011s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_KitchenTable_01/materials/textures/aws_KitchenTable_01.png
+[15.019s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_KitchenTable_01/meshes/aws_KitchenTable_01_collision.DAE
+[15.026s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_KitchenTable_01/meshes/aws_KitchenTable_01_visual.DAE
+[15.035s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_KitchenTable_01/model.config
+[15.043s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_KitchenUtensils_01/materials/textures/aws_KitchenUtensils_01.png
+[15.051s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_KitchenUtensils_01/meshes/aws_KitchenUtensils_01_collision.DAE
+[15.058s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_KitchenUtensils_01/meshes/aws_KitchenUtensils_01_visual.DAE
+[15.066s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_KitchenUtensils_01/model.config
+[15.075s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_LightC_01/materials/textures/aws_LightC_01.png
+[15.083s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_LightC_01/meshes/aws_LightC_01_collision.DAE
+[15.090s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_LightC_01/meshes/aws_LightC_01_visual.DAE
+[15.100s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_LightC_01/model.config
+[15.109s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_NightStand_01/materials/textures/aws_NightStand_01.png
+[15.117s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_NightStand_01/meshes/aws_NightStand_01_collision.DAE
+[15.125s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_NightStand_01/meshes/aws_NightStand_01_visual.DAE
+[15.133s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_NightStand_01/model.config
+[15.140s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Pillow_01/materials/textures/aws_Pillow_01.png
+[15.148s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Pillow_01/meshes/aws_Pillow_01_collision.DAE
+[15.156s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Pillow_01/meshes/aws_Pillow_01_visual.DAE
+[15.163s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Pillow_01/model.config
+[15.172s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitA_01/materials/textures/PortraitA_01.jpg
+[15.179s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitA_01/materials/textures/aws_PortraitA_01.png
+[15.188s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitA_01/materials/textures/aws_PortraitA_02.png
+[15.198s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitA_01/meshes/aws_PortraitA_01_collision.DAE
+[15.206s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitA_01/meshes/aws_PortraitA_01_visual.DAE
+[15.214s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitA_01/model.config
+[15.223s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitA_02/materials/textures/PortraitA_02.jpg
+[15.231s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitA_02/materials/textures/aws_PortraitA_01.png
+[15.240s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitA_02/materials/textures/aws_PortraitA_02.png
+[15.249s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitA_02/meshes/aws_PortraitA_01_collision.DAE
+[15.257s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitA_02/meshes/aws_PortraitA_01_visual.DAE
+[15.267s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitA_02/model.config
+[15.278s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitB_01/materials/textures/PortraitB_01.jpg
+[15.286s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitB_01/materials/textures/aws_PortraitB_01.png
+[15.295s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitB_01/materials/textures/aws_PortraitB_02.png
+[15.304s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitB_01/meshes/aws_PortraitB_01_collision.DAE
+[15.313s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitB_01/meshes/aws_PortraitB_01_visual.DAE
+[15.323s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitB_01/model.config
+[15.331s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitB_02/materials/textures/PortraitB_02.jpg
+[15.339s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitB_02/materials/textures/aws_PortraitB_01.png
+[15.347s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitB_02/materials/textures/aws_PortraitB_02.png
+[15.361s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitB_02/meshes/aws_PortraitB_01_collision.DAE
+[15.369s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitB_02/meshes/aws_PortraitB_01_visual.DAE
+[15.376s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitB_02/model.config
+[15.384s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitB_03/materials/textures/PortraitB_03.jpg
+[15.392s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitB_03/materials/textures/aws_PortraitB_01.png
+[15.402s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitB_03/materials/textures/aws_PortraitB_02.png
+[15.411s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitB_03/meshes/aws_PortraitB_01_collision.DAE
+[15.419s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitB_03/meshes/aws_PortraitB_01_visual.DAE
+[15.426s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitB_03/model.config
+[15.435s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitC_01/materials/textures/PortraitC_01.jpg
+[15.442s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitC_01/materials/textures/aws_PortraitC_01.png
+[15.450s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitC_01/materials/textures/aws_PortraitC_02.png
+[15.458s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitC_01/meshes/aws_PortraitC_01_collision.DAE
+[15.465s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitC_01/meshes/aws_PortraitC_01_visual.DAE
+[15.473s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitC_01/model.config
+[15.482s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitD_01/materials/textures/PortraitD_01.jpg
+[15.489s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitD_01/materials/textures/aws_PortraitD_01.png
+[15.501s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitD_01/materials/textures/aws_PortraitD_02.png
+[15.509s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitD_01/meshes/aws_PortraitD_01_collision.DAE
+[15.518s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitD_01/meshes/aws_PortraitD_01_visual.DAE
+[15.526s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitD_01/model.config
+[15.535s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitD_02/materials/textures/PortraitD_02.jpg
+[15.543s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitD_02/materials/textures/aws_PortraitD_01.png
+[15.551s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitD_02/materials/textures/aws_PortraitD_02.png
+[15.559s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitD_02/meshes/aws_PortraitD_01_collision.DAE
+[15.567s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitD_02/meshes/aws_PortraitD_01_visual.DAE
+[15.574s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitD_02/model.config
+[15.583s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitE_01/materials/textures/PortraitE_01.jpg
+[15.590s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitE_01/materials/textures/aws_PortraitE_01.png
+[15.600s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitE_01/materials/textures/aws_PortraitE_02.png
+[15.609s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitE_01/meshes/aws_PortraitE_01_collision.DAE
+[15.617s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitE_01/meshes/aws_PortraitE_01_visual.DAE
+[15.625s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitE_01/model.config
+[15.634s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitE_02/materials/textures/PortraitE_02.jpg
+[15.642s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitE_02/materials/textures/aws_PortraitE_01.png
+[15.650s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitE_02/materials/textures/aws_PortraitE_02.png
+[15.658s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitE_02/meshes/aws_PortraitE_01_collision.DAE
+[15.665s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitE_02/meshes/aws_PortraitE_01_visual.DAE
+[15.673s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_PortraitE_02/model.config
+[15.681s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Quilt_01/materials/textures/aws_Quilt_01.png
+[15.688s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Quilt_01/meshes/aws_Quilt_01_collision.DAE
+[15.699s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Quilt_01/meshes/aws_Quilt_01_visual.DAE
+[15.707s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Quilt_01/model.config
+[15.715s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Rangehood_01/materials/textures/aws_Rangehood_01.png
+[15.723s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Rangehood_01/meshes/aws_Rangehood_01_collision.DAE
+[15.731s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Rangehood_01/meshes/aws_Rangehood_01_visual.DAE
+[15.740s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Rangehood_01/model.config
+[15.748s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_ReadingDesk_01/materials/textures/aws_ReadingDesk_01.png
+[15.755s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_ReadingDesk_01/meshes/aws_ReadingDesk_01_collision.DAE
+[15.762s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_ReadingDesk_01/meshes/aws_ReadingDesk_01_visual.DAE
+[15.770s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_ReadingDesk_01/model.config
+[15.778s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Refrigerator_01/materials/textures/aws_Refrigerator_01.png
+[15.786s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Refrigerator_01/materials/textures/aws_Refrigerator_02.png
+[15.793s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Refrigerator_01/meshes/aws_Refrigerator_01.DAE
+[15.804s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Refrigerator_01/meshes/aws_Refrigerator_01_collision.DAE
+[15.812s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Refrigerator_01/meshes/aws_Refrigerator_01_visual.DAE
+[15.820s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Refrigerator_01/model.config
+[15.828s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_RoomCeiling_01/materials/textures/aws_RoomCeiling_01.png
+[15.837s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_RoomCeiling_01/meshes/aws_RoomCeiling_01_collision.DAE
+[15.845s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_RoomCeiling_01/meshes/aws_RoomCeiling_01_visual.DAE
+[15.853s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_RoomCeiling_01/model.config
+[15.861s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_RoomWall_01/materials/textures/aws_RoomWall_01.png
+[15.869s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_RoomWall_01/meshes/aws_RoomWall_01_collision.DAE
+[15.878s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_RoomWall_01/meshes/aws_RoomWall_01_visual.DAE
+[15.885s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_RoomWall_01/model.config
+[15.894s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_RoomWindow_01/materials/textures/aws_RoomWindow_01.png
+[15.904s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_RoomWindow_01/meshes/aws_RoomWindow_01_collision.DAE
+[15.913s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_RoomWindow_01/meshes/aws_RoomWindow_01_visual.DAE
+[15.921s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_RoomWindow_01/model.config
+[15.930s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_SeasoningBox_01/materials/textures/aws_SeasoningBox_01.png
+[15.938s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_SeasoningBox_01/meshes/aws_SeasoningBox_01_collision.DAE
+[15.946s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_SeasoningBox_01/meshes/aws_SeasoningBox_01_visual.DAE
+[15.953s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_SeasoningBox_01/model.config
+[15.961s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_SecurityCamera_01/materials/textures/aws_SecurityCamera_01.png
+[15.968s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_SecurityCamera_01/meshes/aws_SecurityCamera_01_collision.DAE
+[15.976s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_SecurityCamera_01/meshes/aws_SecurityCamera_01_visual.DAE
+[15.983s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_SecurityCamera_01/model.config
+[15.990s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_ShoeRack_01/materials/textures/aws_ShoeRack_01.png
+[16.002s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_ShoeRack_01/meshes/aws_ShoeRack_01_collision.DAE
+[16.010s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_ShoeRack_01/meshes/aws_ShoeRack_01_visual.DAE
+[16.018s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_ShoeRack_01/model.config
+[16.026s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_SofaB_01/materials/textures/aws_SofaB_01.png
+[16.033s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_SofaB_01/meshes/aws_SofaB_01_collision.DAE
+[16.042s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_SofaB_01/meshes/aws_SofaB_01_visual.DAE
+[16.050s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_SofaB_01/model.config
+[16.057s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_SofaC_01/materials/textures/aws_SofaC_01.png
+[16.065s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_SofaC_01/meshes/aws_SofaC_01_collision.DAE
+[16.072s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_SofaC_01/meshes/aws_SofaC_01_visual.DAE
+[16.080s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_SofaC_01/model.config
+[16.087s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Sofa_01/materials/textures/aws_Sofa_01.png
+[16.094s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Sofa_01/meshes/aws_Sofa_01.DAE
+[16.105s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Sofa_01/meshes/aws_Sofa_01_collision.DAE
+[16.113s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Sofa_01/meshes/aws_Sofa_01_visual.DAE
+[16.121s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Sofa_01/model.config
+[16.129s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_TVCabinet_01/materials/textures/aws_TVCabinet_01.png
+[16.138s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_TVCabinet_01/meshes/aws_TVCabinet_01_collision.DAE
+[16.145s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_TVCabinet_01/meshes/aws_TVCabinet_01_visual.DAE
+[16.153s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_TVCabinet_01/model.config
+[16.162s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_TV_01/materials/textures/aws_TV_01.png
+[16.169s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_TV_01/meshes/aws_TV_01_collision.DAE
+[16.176s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_TV_01/meshes/aws_TV_01_visual.DAE
+[16.184s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_TV_01/model.config
+[16.192s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_TV_02/materials/textures/aws_TV_01.png
+[16.203s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_TV_02/meshes/aws_TV_01_collision.DAE
+[16.211s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_TV_02/meshes/aws_TV_01_visual.DAE
+[16.219s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_TV_02/model.config
+[16.228s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Tablet_01/.DS_Store
+[16.236s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Tablet_01/materials/.DS_Store
+[16.246s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Tablet_01/materials/textures/aws_Tablet_01_nologo.png
+[16.254s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Tablet_01/meshes/aws_Tablet_01_collision.DAE
+[16.263s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Tablet_01/meshes/aws_Tablet_01_visual.DAE
+[16.272s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Tablet_01/model.config
+[16.280s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Tableware_01/materials/textures/aws_Tableware_01.png
+[16.287s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Tableware_01/meshes/aws_Tableware_01_collision.DAE
+[16.295s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Tableware_01/meshes/aws_Tableware_01_visual.DAE
+[16.305s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Tableware_01/model.config
+[16.313s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Trash_01/materials/textures/aws_Trash_01.png
+[16.322s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Trash_01/meshes/aws_Trash_01_collision.DAE
+[16.329s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Trash_01/meshes/aws_Trash_01_visual.DAE
+[16.338s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Trash_01/model.config
+[16.347s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Vase_01/materials/textures/aws_Vase_01.png
+[16.355s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Vase_01/meshes/aws_Vase_01_collision.DAE
+[16.362s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Vase_01/meshes/aws_Vase_01_visual.DAE
+[16.370s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Vase_01/model.config
+[16.379s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Wardrobe_01/materials/textures/aws_Wardrobe_01.png
+[16.387s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Wardrobe_01/meshes/aws_Wardrobe_01_collision.DAE
+[16.394s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Wardrobe_01/meshes/aws_Wardrobe_01_visual.DAE
+[16.404s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_residential_Wardrobe_01/model.config
+[16.411s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_Bucket_01/.DS_Store
+[16.419s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_Bucket_01/materials/.DS_Store
+[16.427s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_Bucket_01/materials/textures/aws_robomaker_warehouse_Bucket_01.png
+[16.435s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_Bucket_01/meshes/aws_robomaker_warehouse_Bucket_01_collision.DAE
+[16.443s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_Bucket_01/meshes/aws_robomaker_warehouse_Bucket_01_visual.DAE
+[16.450s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_Bucket_01/model.config
+[16.458s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_ClutteringA_01/.DS_Store
+[16.466s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_ClutteringA_01/materials/.DS_Store
+[16.473s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_ClutteringA_01/materials/textures/.DS_Store
+[16.482s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_ClutteringA_01/materials/textures/aws_robomaker_warehouse_ClutteringA_01.png
+[16.489s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_ClutteringA_01/materials/textures/aws_robomaker_warehouse_ClutteringA_02.png
+[16.500s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_ClutteringA_01/materials/textures/aws_robomaker_warehouse_ClutteringA_03.png
+[16.509s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_ClutteringA_01/meshes/aws_robomaker_warehouse_ClutteringA_01_collision.DAE
+[16.518s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_ClutteringA_01/meshes/aws_robomaker_warehouse_ClutteringA_01_visual.DAE
+[16.527s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_ClutteringA_01/model.config
+[16.535s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_ClutteringC_01/materials/textures/aws_robomaker_warehouse_ClutteringC_01.png
+[16.544s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_ClutteringC_01/materials/textures/aws_robomaker_warehouse_ClutteringC_02.png
+[16.552s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_ClutteringC_01/meshes/aws_robomaker_warehouse_ClutteringC_01_collision.DAE
+[16.559s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_ClutteringC_01/meshes/aws_robomaker_warehouse_ClutteringC_01_visual.DAE
+[16.567s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_ClutteringC_01/model.config
+[16.574s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_ClutteringD_01/materials/textures/aws_robomaker_warehouse_ClutteringD_01.png
+[16.583s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_ClutteringD_01/materials/textures/aws_robomaker_warehouse_ClutteringD_02.png
+[16.590s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_ClutteringD_01/meshes/aws_robomaker_warehouse_ClutteringD_01_collision.DAE
+[16.601s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_ClutteringD_01/meshes/aws_robomaker_warehouse_ClutteringD_01_visual.DAE
+[16.610s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_ClutteringD_01/model.config
+[16.617s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_DeskC_01/materials/.DS_Store
+[16.626s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_DeskC_01/materials/textures/aws_robomaker_warehouse_DeskC_01.png
+[16.633s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_DeskC_01/materials/textures/aws_robomaker_warehouse_DeskC_02.png
+[16.641s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_DeskC_01/materials/textures/aws_robomaker_warehouse_DeskC_03.png
+[16.649s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_DeskC_01/materials/textures/aws_robomaker_warehouse_DeskC_03.psd
+[16.656s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_DeskC_01/materials/textures/aws_robomaker_warehouse_DeskC_04.png
+[16.665s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_DeskC_01/meshes/aws_robomaker_warehouse_DeskC_01_collision.DAE
+[16.672s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_DeskC_01/meshes/aws_robomaker_warehouse_DeskC_01_visual.DAE
+[16.680s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_DeskC_01/model.config
+[16.688s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_GroundB_01/materials/textures/aws_robomaker_warehouse_GroundB_01.png
+[16.696s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_GroundB_01/materials/textures/aws_robomaker_warehouse_GroundB_02.png
+[16.707s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_GroundB_01/meshes/aws_robomaker_warehouse_GroundB_01_collision.DAE
+[16.715s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_GroundB_01/meshes/aws_robomaker_warehouse_GroundB_01_visual.DAE
+[16.724s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_GroundB_01/model.config
+[16.731s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_Lamp_01/materials/textures/aws_robomaker_warehouse_Lamp_01.png
+[16.740s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_Lamp_01/meshes/aws_robomaker_warehouse_Lamp_01_collision.DAE
+[16.747s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_Lamp_01/meshes/aws_robomaker_warehouse_Lamp_01_visual.DAE
+[16.755s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_Lamp_01/model.config
+[16.763s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_PalletJackB_01/.DS_Store
+[16.771s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_PalletJackB_01/materials/.DS_Store
+[16.778s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_PalletJackB_01/materials/textures/aws_robomaker_warehouse_PalletJackB_01.png
+[16.785s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_PalletJackB_01/materials/textures/aws_robomaker_warehouse_PalletJackB_02.png
+[16.793s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_PalletJackB_01/meshes/aws_robomaker_warehouse_PalletJackB_01_collision.DAE
+[16.803s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_PalletJackB_01/meshes/aws_robomaker_warehouse_PalletJackB_01_visual.DAE
+[16.811s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_PalletJackB_01/model.config
+[16.818s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_RoofB_01/materials/textures/aws_robomaker_warehouse_RoofB_01.png
+[16.827s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_RoofB_01/meshes/aws_robomaker_warehouse_RoofB_01_collision.DAE
+[16.835s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_RoofB_01/meshes/aws_robomaker_warehouse_RoofB_01_visual.DAE
+[16.843s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_RoofB_01/model.config
+[16.851s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_ShelfD_01/materials/textures/aws_robomaker_warehouse_ShelfD_01.png
+[16.858s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_ShelfD_01/materials/textures/aws_robomaker_warehouse_ShelfD_02.png
+[16.866s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_ShelfD_01/materials/textures/aws_robomaker_warehouse_ShelfD_03.png
+[16.874s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_ShelfD_01/materials/textures/aws_robomaker_warehouse_ShelfD_04.png
+[16.881s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_ShelfD_01/meshes/aws_robomaker_warehouse_ShelfD_01_collision.DAE
+[16.889s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_ShelfD_01/meshes/aws_robomaker_warehouse_ShelfD_01_visual.DAE
+[16.897s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_ShelfD_01/model.config
+[16.907s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_ShelfE_01/.DS_Store
+[16.915s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_ShelfE_01/materials/.DS_Store
+[16.924s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_ShelfE_01/materials/textures/aws_robomaker_warehouse_ShelfE_01.png
+[16.932s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_ShelfE_01/materials/textures/aws_robomaker_warehouse_ShelfE_02.png
+[16.942s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_ShelfE_01/materials/textures/aws_robomaker_warehouse_ShelfE_03.png
+[16.949s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_ShelfE_01/materials/textures/aws_robomaker_warehouse_ShelfE_04.png
+[16.957s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_ShelfE_01/meshes/aws_robomaker_warehouse_ShelfE_01_collision.DAE
+[16.965s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_ShelfE_01/meshes/aws_robomaker_warehouse_ShelfE_01_visual.DAE
+[16.973s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_ShelfE_01/model.config
+[16.981s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_ShelfF_01/materials/textures/aws_robomaker_warehouse_ShelfF_01.png
+[16.990s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_ShelfF_01/materials/textures/aws_robomaker_warehouse_ShelfF_02.png
+[17.000s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_ShelfF_01/materials/textures/aws_robomaker_warehouse_ShelfF_03.png
+[17.009s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_ShelfF_01/meshes/aws_robomaker_warehouse_ShelfF_01_collision.DAE
+[17.017s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_ShelfF_01/meshes/aws_robomaker_warehouse_ShelfF_01_visual.DAE
+[17.024s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_ShelfF_01/model.config
+[17.033s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_TrashCanC_01/materials/textures/aws_robomaker_warehouse_TrashCanC_01.png
+[17.040s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_TrashCanC_01/meshes/aws_robomaker_warehouse_TrashCanC_01_collision.DAE
+[17.049s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_TrashCanC_01/meshes/aws_robomaker_warehouse_TrashCanC_01_visual.DAE
+[17.056s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_TrashCanC_01/model.config
+[17.063s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_WallB_01/materials/textures/aws_robomaker_warehouse_WallB_01.png
+[17.071s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_WallB_01/meshes/aws_robomaker_warehouse_WallB_01_collision.DAE
+[17.078s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_WallB_01/meshes/aws_robomaker_warehouse_WallB_01_visual.DAE
+[17.087s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/aws_robomaker_warehouse_WallB_01/model.config
+[17.094s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/braid01_diffuse.png.001.png
+[17.104s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/brown_eye.png
+[17.112s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/brown_eye.png.001.png
+[17.121s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/brown_eye.png.002.png
+[17.129s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/casual_man.dae
+[17.137s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/elegant_man.dae
+[17.145s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/elegant_woman.dae
+[17.153s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/eyebrow001.png
+[17.160s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/eyebrow001.png.001.png
+[17.169s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/eyebrow001.png.002.png
+[17.176s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/female_casualsuit01_diffuse.png.001.png
+[17.184s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/male_casualsuit01_diffuse.png
+[17.192s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/male_casualsuit06_diffuse.png.001.png
+[17.203s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/male_elegantsuit01_diffuse.png.001.png
+[17.210s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/male_worksuit01_diffuse.png
+[17.218s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/middleage_darkskinned_male_diffuse.png
+[17.226s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/middleage_lightskinned_female_diffuse.png.002.png
+[17.234s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/middleage_lightskinned_male_diffuse.png.001.png
+[17.241s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/mono.dae
+[17.250s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/mono2.dae
+[17.257s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/mono3.dae
+[17.265s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/mono4.dae
+[17.273s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/mono5.dae
+[17.281s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/old_lightskinned_male_diffuse.png
+[17.288s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/regular_man.dae
+[17.296s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/run.dae
+[17.306s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/shoes01_diffuse.png
+[17.314s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/shoes01_diffuse.png.001.png
+[17.321s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/shoes03_diffuse.png
+[17.330s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/shoes03_diffuse.png.001.png
+[17.338s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/shoes05_diffuse.png.001.png
+[17.346s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/short01_diffuse.png
+[17.354s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/short02_diffuse.png
+[17.362s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/short02_diffuse.png.001.png
+[17.370s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/short03_diffuse.png.001.png
+[17.377s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/sit_down.dae
+[17.384s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/sitting.dae
+[17.393s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/stand.dae
+[17.403s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/stand_up.dae
+[17.413s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/sub_16.dae
+[17.423s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/talk_a.dae
+[17.433s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/talk_b.dae
+[17.443s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/walk-blue.dae
+[17.452s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/walk-green.dae
+[17.462s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/walk-red.dae
+[17.471s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/walk.dae
+[17.480s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/worlds/models/worker_man.dae
+[17.489s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/scenarios/agents_test.yaml
+[17.500s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/ament_index/resource_index/package_run_dependencies/hunav_gazebo_fortress_wrapper
+[17.510s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/ament_index/resource_index/parent_prefix_path/hunav_gazebo_fortress_wrapper
+[17.519s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/environment/ament_prefix_path.sh
+[17.530s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/environment/ament_prefix_path.dsv
+[17.539s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/environment/path.sh
+[17.549s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/environment/path.dsv
+[17.559s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/local_setup.bash
+[17.567s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/local_setup.sh
+[17.576s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/local_setup.zsh
+[17.585s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/local_setup.dsv
+[17.594s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/package.dsv
+[17.607s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/ament_index/resource_index/packages/hunav_gazebo_fortress_wrapper
+[17.617s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/cmake/hunav_gazebo_fortress_wrapperConfig.cmake
+[17.627s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/cmake/hunav_gazebo_fortress_wrapperConfig-version.cmake
+[17.636s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_gazebo_fortress_wrapper/share/hunav_gazebo_fortress_wrapper/package.xml
+[17.648s] Invoked command in '/home/hunav_gz_fortress_ws/build/hunav_gazebo_fortress_wrapper' returned '0': AMENT_PREFIX_PATH=/home/hunav_gz_fortress_ws/install/hunav_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hunav_gz_fortress_ws/install/hunav_msgs:/home/ros2_ws/install/gazebo_ros2_control_demos:/home/ros2_ws/install/ros2_control:/home/ros2_ws/install/transmission_interface:/home/ros2_ws/install/hardware_interface_testing:/home/ros2_ws/install/gazebo_ros2_control:/home/ros2_ws/install/controller_manager:/home/ros2_ws/install/ros2_control_test_assets:/home/ros2_ws/install/people_msgs:/home/ros2_ws/install/joint_limits:/home/ros2_ws/install/controller_interface:/home/ros2_ws/install/hardware_interface:/home/ros2_ws/install/controller_manager_msgs:/home/ros2_ws/install/btcpp_ros2_samples:/home/ros2_ws/install/behaviortree_ros2:/home/ros2_ws/install/btcpp_ros2_interfaces:/home/ros2_ws/install/behaviortree_cpp:/home/ros2_ws/install/rqt_controller_manager:/home/ros2_ws/install/ros2controlcli:/opt/ros/humble LD_LIBRARY_PATH=/home/hunav_gz_fortress_ws/install/hunav_msgs/lib:/home/ros2_ws/install/transmission_interface/lib:/home/ros2_ws/install/hardware_interface_testing/lib:/home/ros2_ws/install/gazebo_ros2_control/lib:/home/ros2_ws/install/controller_manager/lib:/home/ros2_ws/install/people_msgs/lib:/home/ros2_ws/install/joint_limits/lib:/home/ros2_ws/install/controller_interface/lib:/home/ros2_ws/install/hardware_interface/lib:/home/ros2_ws/install/controller_manager_msgs/lib:/home/ros2_ws/install/behaviortree_ros2/lib:/home/ros2_ws/install/btcpp_ros2_interfaces/lib:/home/ros2_ws/install/behaviortree_cpp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/hunav_gz_fortress_ws/install/hunav_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/hunav_gz_fortress_ws/build/hunav_gazebo_fortress_wrapper

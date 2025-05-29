@@ -1,0 +1,17 @@
+[0.416s] Invoking command in '/home/hunav_gz_classic_ws/build/hunav_evaluator': AMENT_PREFIX_PATH=/home/hunav_gz_classic_ws/install/hunav_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hunav_gz_classic_ws/install/hunav_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/hunav_gz_classic_ws/install/hunav_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hunav_gz_classic_ws/build/hunav_evaluator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hunav_gz_classic_ws/install/hunav_evaluator/lib/python3.10/site-packages:/home/hunav_gz_classic_ws/install/hunav_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/hunav_gz_classic_ws/build/hunav_evaluator/build --no-deps symlink_data
+[0.567s] running develop
+[0.651s] running egg_info
+[0.651s] writing hunav_evaluator.egg-info/PKG-INFO
+[0.652s] writing dependency_links to hunav_evaluator.egg-info/dependency_links.txt
+[0.652s] writing entry points to hunav_evaluator.egg-info/entry_points.txt
+[0.652s] writing requirements to hunav_evaluator.egg-info/requires.txt
+[0.652s] writing top-level names to hunav_evaluator.egg-info/top_level.txt
+[0.653s] reading manifest file 'hunav_evaluator.egg-info/SOURCES.txt'
+[0.653s] writing manifest file 'hunav_evaluator.egg-info/SOURCES.txt'
+[0.654s] running build_ext
+[0.654s] Creating /home/hunav_gz_classic_ws/install/hunav_evaluator/lib/python3.10/site-packages/hunav-evaluator.egg-link (link to .)
+[0.654s] Installing hunav_evaluator_node script to /home/hunav_gz_classic_ws/install/hunav_evaluator/lib/hunav_evaluator
+[0.655s] 
+[0.655s] Installed /home/hunav_gz_classic_ws/build/hunav_evaluator
+[0.655s] running symlink_data
+[0.675s] Invoked command in '/home/hunav_gz_classic_ws/build/hunav_evaluator' returned '0': AMENT_PREFIX_PATH=/home/hunav_gz_classic_ws/install/hunav_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hunav_gz_classic_ws/install/hunav_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/hunav_gz_classic_ws/install/hunav_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hunav_gz_classic_ws/build/hunav_evaluator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hunav_gz_classic_ws/install/hunav_evaluator/lib/python3.10/site-packages:/home/hunav_gz_classic_ws/install/hunav_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/hunav_gz_classic_ws/build/hunav_evaluator/build --no-deps symlink_data

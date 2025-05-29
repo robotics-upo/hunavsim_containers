@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/hunav_gz_fortress_ws/build/hunav_agent_manager/hunav_agent_manager" "/home/hunav_gz_fortress_ws/build/hunav_agent_manager/hunav_loader" "TARGETS" "hunav_agent_manager" "hunav_loader" "DESTINATION" "lib/hunav_agent_manager")

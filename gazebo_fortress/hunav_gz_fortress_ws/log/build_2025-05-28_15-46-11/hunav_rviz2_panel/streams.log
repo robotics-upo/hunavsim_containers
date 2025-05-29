@@ -1,0 +1,174 @@
+[0.163s] Invoking command in '/home/hunav_gz_fortress_ws/build/hunav_rviz2_panel': AMENT_PREFIX_PATH=/home/hunav_gz_fortress_ws/install/hunav_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hunav_gz_fortress_ws/install/hunav_msgs:/home/ros2_ws/install/gazebo_ros2_control_demos:/home/ros2_ws/install/ros2_control:/home/ros2_ws/install/transmission_interface:/home/ros2_ws/install/hardware_interface_testing:/home/ros2_ws/install/gazebo_ros2_control:/home/ros2_ws/install/controller_manager:/home/ros2_ws/install/ros2_control_test_assets:/home/ros2_ws/install/people_msgs:/home/ros2_ws/install/joint_limits:/home/ros2_ws/install/controller_interface:/home/ros2_ws/install/hardware_interface:/home/ros2_ws/install/controller_manager_msgs:/home/ros2_ws/install/btcpp_ros2_samples:/home/ros2_ws/install/behaviortree_ros2:/home/ros2_ws/install/btcpp_ros2_interfaces:/home/ros2_ws/install/behaviortree_cpp:/home/ros2_ws/install/rqt_controller_manager:/home/ros2_ws/install/ros2controlcli:/opt/ros/humble LD_LIBRARY_PATH=/home/hunav_gz_fortress_ws/install/hunav_msgs/lib:/home/ros2_ws/install/transmission_interface/lib:/home/ros2_ws/install/hardware_interface_testing/lib:/home/ros2_ws/install/gazebo_ros2_control/lib:/home/ros2_ws/install/controller_manager/lib:/home/ros2_ws/install/people_msgs/lib:/home/ros2_ws/install/joint_limits/lib:/home/ros2_ws/install/controller_interface/lib:/home/ros2_ws/install/hardware_interface/lib:/home/ros2_ws/install/controller_manager_msgs/lib:/home/ros2_ws/install/behaviortree_ros2/lib:/home/ros2_ws/install/btcpp_ros2_interfaces/lib:/home/ros2_ws/install/behaviortree_cpp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/hunav_gz_fortress_ws/install/hunav_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/hunav_gz_fortress_ws/src/hunav_sim/hunav_rviz2_panel -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hunav_gz_fortress_ws/install/hunav_rviz2_panel
+[0.208s] -- The C compiler identification is GNU 11.4.0
+[0.246s] -- The CXX compiler identification is GNU 11.4.0
+[0.251s] -- Detecting C compiler ABI info
+[0.315s] -- Detecting C compiler ABI info - done
+[0.319s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.319s] -- Detecting C compile features
+[0.320s] -- Detecting C compile features - done
+[0.322s] -- Detecting CXX compiler ABI info
+[0.389s] -- Detecting CXX compiler ABI info - done
+[0.394s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.394s] -- Detecting CXX compile features
+[0.394s] -- Detecting CXX compile features - done
+[0.399s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.515s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.557s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.623s] -- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.678s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.686s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.697s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.711s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.728s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.763s] -- Found nav2_util: 1.1.18 (/opt/ros/humble/share/nav2_util/cmake)
+[0.908s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.913s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.938s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.952s] -- Looking for pthread.h
+[1.019s] -- Looking for pthread.h - found
+[1.020s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.087s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.088s] -- Found Threads: TRUE  
+[1.188s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.189s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.189s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.236s] -- Found hunav_msgs: 1.0.0 (/home/hunav_gz_fortress_ws/install/hunav_msgs/share/hunav_msgs/cmake)
+[1.249s] -- Found pluginlib: 5.1.0 (/opt/ros/humble/share/pluginlib/cmake)
+[1.288s] -- Found rviz_common: 11.2.16 (/opt/ros/humble/share/rviz_common/cmake)
+[1.298s] -- Setting assimp_DIR to: '/opt/ros/humble/share/rviz_assimp_vendor/cmake/../../../opt/rviz_assimp_vendor/lib/cmake/assimp-4.1'
+[1.311s] -- Setting OGRE_DIR to: '/opt/ros/humble/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+[1.312s] -- Found OGRE
+[1.312s] --   static     : OFF
+[1.312s] --   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[1.312s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[1.312s] --   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media
+[1.312s] -- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+[1.312s] -- OGRE_LIBRARY_DIRS: /opt/ros/humble/opt/rviz_ogre_vendor/lib
+[1.312s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[1.312s] -- OGRE_PLUGIN_DIR: /opt/ros/humble/opt/rviz_ogre_vendor/lib/OGRE
+[1.312s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[1.312s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[1.312s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[1.312s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[1.328s] -- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") 
+[1.332s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   
+[1.412s] -- Found X11: /usr/include   
+[1.412s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+[1.477s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+[1.477s] -- Looking for gethostbyname
+[1.537s] -- Looking for gethostbyname - found
+[1.537s] -- Looking for connect
+[1.599s] -- Looking for connect - found
+[1.599s] -- Looking for remove
+[1.654s] -- Looking for remove - found
+[1.655s] -- Looking for shmat
+[1.717s] -- Looking for shmat - found
+[1.717s] -- Looking for IceConnectionNumber in ICE
+[1.781s] -- Looking for IceConnectionNumber in ICE - found
+[1.874s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[1.925s] -- Found rviz_default_plugins: 11.2.16 (/opt/ros/humble/share/rviz_default_plugins/cmake)
+[2.006s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.098s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.101s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.101s] -- Configured cppcheck include dirs: /home/hunav_gz_fortress_ws/src/hunav_sim/hunav_rviz2_panel/include
+[2.101s] -- Configured cppcheck exclude dirs and/or files: 
+[2.104s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.104s] -- Configured cpplint exclude dirs and/or files: 
+[2.105s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.106s] -- Added test 'lint_cmake' to check CMake code style
+[2.107s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.109s] -- Added test 'uncrustify' to check C / C++ code style
+[2.109s] -- Configured uncrustify additional arguments: 
+[2.110s] -- Added test 'xmllint' to check XML markup files
+[2.113s] -- Configuring done
+[2.158s] -- Generating done
+[2.166s] -- Build files have been written to: /home/hunav_gz_fortress_ws/build/hunav_rviz2_panel
+[2.178s] Invoked command in '/home/hunav_gz_fortress_ws/build/hunav_rviz2_panel' returned '0': AMENT_PREFIX_PATH=/home/hunav_gz_fortress_ws/install/hunav_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hunav_gz_fortress_ws/install/hunav_msgs:/home/ros2_ws/install/gazebo_ros2_control_demos:/home/ros2_ws/install/ros2_control:/home/ros2_ws/install/transmission_interface:/home/ros2_ws/install/hardware_interface_testing:/home/ros2_ws/install/gazebo_ros2_control:/home/ros2_ws/install/controller_manager:/home/ros2_ws/install/ros2_control_test_assets:/home/ros2_ws/install/people_msgs:/home/ros2_ws/install/joint_limits:/home/ros2_ws/install/controller_interface:/home/ros2_ws/install/hardware_interface:/home/ros2_ws/install/controller_manager_msgs:/home/ros2_ws/install/btcpp_ros2_samples:/home/ros2_ws/install/behaviortree_ros2:/home/ros2_ws/install/btcpp_ros2_interfaces:/home/ros2_ws/install/behaviortree_cpp:/home/ros2_ws/install/rqt_controller_manager:/home/ros2_ws/install/ros2controlcli:/opt/ros/humble LD_LIBRARY_PATH=/home/hunav_gz_fortress_ws/install/hunav_msgs/lib:/home/ros2_ws/install/transmission_interface/lib:/home/ros2_ws/install/hardware_interface_testing/lib:/home/ros2_ws/install/gazebo_ros2_control/lib:/home/ros2_ws/install/controller_manager/lib:/home/ros2_ws/install/people_msgs/lib:/home/ros2_ws/install/joint_limits/lib:/home/ros2_ws/install/controller_interface/lib:/home/ros2_ws/install/hardware_interface/lib:/home/ros2_ws/install/controller_manager_msgs/lib:/home/ros2_ws/install/behaviortree_ros2/lib:/home/ros2_ws/install/btcpp_ros2_interfaces/lib:/home/ros2_ws/install/behaviortree_cpp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/hunav_gz_fortress_ws/install/hunav_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/hunav_gz_fortress_ws/src/hunav_sim/hunav_rviz2_panel -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hunav_gz_fortress_ws/install/hunav_rviz2_panel
+[2.180s] Invoking command in '/home/hunav_gz_fortress_ws/build/hunav_rviz2_panel': AMENT_PREFIX_PATH=/home/hunav_gz_fortress_ws/install/hunav_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hunav_gz_fortress_ws/install/hunav_msgs:/home/ros2_ws/install/gazebo_ros2_control_demos:/home/ros2_ws/install/ros2_control:/home/ros2_ws/install/transmission_interface:/home/ros2_ws/install/hardware_interface_testing:/home/ros2_ws/install/gazebo_ros2_control:/home/ros2_ws/install/controller_manager:/home/ros2_ws/install/ros2_control_test_assets:/home/ros2_ws/install/people_msgs:/home/ros2_ws/install/joint_limits:/home/ros2_ws/install/controller_interface:/home/ros2_ws/install/hardware_interface:/home/ros2_ws/install/controller_manager_msgs:/home/ros2_ws/install/btcpp_ros2_samples:/home/ros2_ws/install/behaviortree_ros2:/home/ros2_ws/install/btcpp_ros2_interfaces:/home/ros2_ws/install/behaviortree_cpp:/home/ros2_ws/install/rqt_controller_manager:/home/ros2_ws/install/ros2controlcli:/opt/ros/humble LD_LIBRARY_PATH=/home/hunav_gz_fortress_ws/install/hunav_msgs/lib:/home/ros2_ws/install/transmission_interface/lib:/home/ros2_ws/install/hardware_interface_testing/lib:/home/ros2_ws/install/gazebo_ros2_control/lib:/home/ros2_ws/install/controller_manager/lib:/home/ros2_ws/install/people_msgs/lib:/home/ros2_ws/install/joint_limits/lib:/home/ros2_ws/install/controller_interface/lib:/home/ros2_ws/install/hardware_interface/lib:/home/ros2_ws/install/controller_manager_msgs/lib:/home/ros2_ws/install/behaviortree_ros2/lib:/home/ros2_ws/install/btcpp_ros2_interfaces/lib:/home/ros2_ws/install/behaviortree_cpp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/hunav_gz_fortress_ws/install/hunav_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/hunav_gz_fortress_ws/build/hunav_rviz2_panel -- -j16 -l16
+[2.231s] [ 16%] [34m[1mAutomatic MOC for target hunav_rviz2_panel[0m
+[2.898s] [ 16%] Built target hunav_rviz2_panel_autogen
+[2.927s] [ 66%] [32mBuilding CXX object CMakeFiles/hunav_rviz2_panel.dir/hunav_rviz2_panel_autogen/mocs_compilation.cpp.o[0m
+[2.927s] [ 66%] [32mBuilding CXX object CMakeFiles/hunav_rviz2_panel.dir/src/actor_panel.cpp.o[0m
+[2.927s] [ 66%] [32mBuilding CXX object CMakeFiles/hunav_rviz2_panel.dir/src/goal_tool.cpp.o[0m
+[2.927s] [ 83%] [32mBuilding CXX object CMakeFiles/hunav_rviz2_panel.dir/src/metrics_panel.cpp.o[0m
+[11.341s] [100%] [32m[1mLinking CXX shared library libhunav_rviz2_panel.so[0m
+[13.149s] [100%] Built target hunav_rviz2_panel
+[13.161s] Invoked command in '/home/hunav_gz_fortress_ws/build/hunav_rviz2_panel' returned '0': AMENT_PREFIX_PATH=/home/hunav_gz_fortress_ws/install/hunav_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hunav_gz_fortress_ws/install/hunav_msgs:/home/ros2_ws/install/gazebo_ros2_control_demos:/home/ros2_ws/install/ros2_control:/home/ros2_ws/install/transmission_interface:/home/ros2_ws/install/hardware_interface_testing:/home/ros2_ws/install/gazebo_ros2_control:/home/ros2_ws/install/controller_manager:/home/ros2_ws/install/ros2_control_test_assets:/home/ros2_ws/install/people_msgs:/home/ros2_ws/install/joint_limits:/home/ros2_ws/install/controller_interface:/home/ros2_ws/install/hardware_interface:/home/ros2_ws/install/controller_manager_msgs:/home/ros2_ws/install/btcpp_ros2_samples:/home/ros2_ws/install/behaviortree_ros2:/home/ros2_ws/install/btcpp_ros2_interfaces:/home/ros2_ws/install/behaviortree_cpp:/home/ros2_ws/install/rqt_controller_manager:/home/ros2_ws/install/ros2controlcli:/opt/ros/humble LD_LIBRARY_PATH=/home/hunav_gz_fortress_ws/install/hunav_msgs/lib:/home/ros2_ws/install/transmission_interface/lib:/home/ros2_ws/install/hardware_interface_testing/lib:/home/ros2_ws/install/gazebo_ros2_control/lib:/home/ros2_ws/install/controller_manager/lib:/home/ros2_ws/install/people_msgs/lib:/home/ros2_ws/install/joint_limits/lib:/home/ros2_ws/install/controller_interface/lib:/home/ros2_ws/install/hardware_interface/lib:/home/ros2_ws/install/controller_manager_msgs/lib:/home/ros2_ws/install/behaviortree_ros2/lib:/home/ros2_ws/install/btcpp_ros2_interfaces/lib:/home/ros2_ws/install/behaviortree_cpp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/hunav_gz_fortress_ws/install/hunav_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/hunav_gz_fortress_ws/build/hunav_rviz2_panel -- -j16 -l16
+[13.163s] Invoking command in '/home/hunav_gz_fortress_ws/build/hunav_rviz2_panel': AMENT_PREFIX_PATH=/home/hunav_gz_fortress_ws/install/hunav_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hunav_gz_fortress_ws/install/hunav_msgs:/home/ros2_ws/install/gazebo_ros2_control_demos:/home/ros2_ws/install/ros2_control:/home/ros2_ws/install/transmission_interface:/home/ros2_ws/install/hardware_interface_testing:/home/ros2_ws/install/gazebo_ros2_control:/home/ros2_ws/install/controller_manager:/home/ros2_ws/install/ros2_control_test_assets:/home/ros2_ws/install/people_msgs:/home/ros2_ws/install/joint_limits:/home/ros2_ws/install/controller_interface:/home/ros2_ws/install/hardware_interface:/home/ros2_ws/install/controller_manager_msgs:/home/ros2_ws/install/btcpp_ros2_samples:/home/ros2_ws/install/behaviortree_ros2:/home/ros2_ws/install/btcpp_ros2_interfaces:/home/ros2_ws/install/behaviortree_cpp:/home/ros2_ws/install/rqt_controller_manager:/home/ros2_ws/install/ros2controlcli:/opt/ros/humble LD_LIBRARY_PATH=/home/hunav_gz_fortress_ws/install/hunav_msgs/lib:/home/ros2_ws/install/transmission_interface/lib:/home/ros2_ws/install/hardware_interface_testing/lib:/home/ros2_ws/install/gazebo_ros2_control/lib:/home/ros2_ws/install/controller_manager/lib:/home/ros2_ws/install/people_msgs/lib:/home/ros2_ws/install/joint_limits/lib:/home/ros2_ws/install/controller_interface/lib:/home/ros2_ws/install/hardware_interface/lib:/home/ros2_ws/install/controller_manager_msgs/lib:/home/ros2_ws/install/behaviortree_ros2/lib:/home/ros2_ws/install/btcpp_ros2_interfaces/lib:/home/ros2_ws/install/behaviortree_cpp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/hunav_gz_fortress_ws/install/hunav_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/hunav_gz_fortress_ws/build/hunav_rviz2_panel
+[13.169s] -- Install configuration: ""
+[13.170s] -- Execute custom install script
+[13.170s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel//plugins_description.xml
+[13.179s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/include//headers/actor_panel.hpp
+[13.187s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/include//headers/goal_common.hpp
+[13.195s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/include//headers/goal_pose_updater.hpp
+[13.206s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/include//headers/goal_tool.hpp
+[13.215s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/include//headers/metrics_panel.hpp
+[13.225s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/meshes/casual_man.dae
+[13.235s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/meshes/elegant_man.dae
+[13.244s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/meshes/elegant_woman.dae
+[13.254s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/meshes/regular_man.dae
+[13.264s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/meshes/ring.dae
+[13.273s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/meshes/textures/braid01_diffuse.png
+[13.282s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/meshes/textures/brown_eye.png
+[13.292s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/meshes/textures/eyebrow001.png
+[13.302s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/meshes/textures/eyelashes01.png
+[13.311s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/meshes/textures/female_casualsuit01_diffuse.png
+[13.320s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/meshes/textures/female_casualsuit01_normal.png
+[13.330s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/meshes/textures/male_casualsuit01_diffuse.png
+[13.339s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/meshes/textures/male_casualsuit01_normal.png
+[13.349s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/meshes/textures/male_casualsuit04_diffuse.png
+[13.357s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/meshes/textures/male_casualsuit04_normal.png
+[13.366s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/meshes/textures/male_casualsuit06_diffuse.png
+[13.374s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/meshes/textures/male_casualsuit06_normal.png
+[13.382s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/meshes/textures/male_elegantsuit01_diffuse.png
+[13.390s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/meshes/textures/male_worksuit01_diffuse.png
+[13.401s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/meshes/textures/male_worksuit01_normal.png
+[13.410s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/meshes/textures/middleage_darkskinned_male_diffuse.png
+[13.419s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/meshes/textures/middleage_lightskinned_male_diffuse.png
+[13.429s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/meshes/textures/shoes01_diffuse.png
+[13.439s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/meshes/textures/shoes01_normal.png
+[13.448s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/meshes/textures/shoes03_diffuse.png
+[13.457s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/meshes/textures/shoes05_diffuse.png
+[13.466s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/meshes/textures/short01_diffuse.png
+[13.474s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/meshes/textures/short02_diffuse.png
+[13.482s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/meshes/textures/short03_diffuse.png
+[13.492s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/meshes/walk.dae
+[13.503s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/meshes/worker_man.dae
+[13.512s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/launch/hunav_rviz2_launch.py
+[13.520s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/launch/rviz2.rviz
+[13.528s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/maps/bookstore.pgm
+[13.536s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/maps/bookstore.yaml
+[13.543s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/maps/cafe.pgm
+[13.551s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/maps/cafe.yaml
+[13.558s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/maps/map_cafe2.pgm
+[13.566s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/maps/map_cafe2.yaml
+[13.575s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/maps/small_house.pgm
+[13.582s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/maps/small_house.yaml
+[13.590s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/maps/small_warehouse.pgm
+[13.599s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/maps/small_warehouse.yaml
+[13.607s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/environment/library_path.sh
+[13.614s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/environment/library_path.dsv
+[13.623s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/ament_index/resource_index/package_run_dependencies/hunav_rviz2_panel
+[13.631s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/ament_index/resource_index/parent_prefix_path/hunav_rviz2_panel
+[13.640s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/environment/ament_prefix_path.sh
+[13.647s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/environment/ament_prefix_path.dsv
+[13.655s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/environment/path.sh
+[13.663s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/environment/path.dsv
+[13.671s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/local_setup.bash
+[13.678s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/local_setup.sh
+[13.685s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/local_setup.zsh
+[13.693s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/local_setup.dsv
+[13.703s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/package.dsv
+[13.711s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/ament_index/resource_index/packages/hunav_rviz2_panel
+[13.720s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/ament_index/resource_index/rviz_common__pluginlib__plugin/hunav_rviz2_panel
+[13.728s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/cmake/ament_cmake_export_include_directories-extras.cmake
+[13.736s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/cmake/ament_cmake_export_targets-extras.cmake
+[13.745s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/cmake/ament_cmake_export_dependencies-extras.cmake
+[13.752s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/cmake/hunav_rviz2_panelConfig.cmake
+[13.759s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/cmake/hunav_rviz2_panelConfig-version.cmake
+[13.766s] -- Symlinking: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/package.xml
+[13.773s] -- Installing: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/lib/libhunav_rviz2_panel.so
+[13.777s] -- Set runtime path of "/home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/lib/libhunav_rviz2_panel.so" to ""
+[13.777s] -- Installing: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/cmake/hunav_rviz2_panelExport.cmake
+[13.777s] -- Installing: /home/hunav_gz_fortress_ws/install/hunav_rviz2_panel/share/hunav_rviz2_panel/cmake/hunav_rviz2_panelExport-noconfig.cmake
+[13.779s] Invoked command in '/home/hunav_gz_fortress_ws/build/hunav_rviz2_panel' returned '0': AMENT_PREFIX_PATH=/home/hunav_gz_fortress_ws/install/hunav_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hunav_gz_fortress_ws/install/hunav_msgs:/home/ros2_ws/install/gazebo_ros2_control_demos:/home/ros2_ws/install/ros2_control:/home/ros2_ws/install/transmission_interface:/home/ros2_ws/install/hardware_interface_testing:/home/ros2_ws/install/gazebo_ros2_control:/home/ros2_ws/install/controller_manager:/home/ros2_ws/install/ros2_control_test_assets:/home/ros2_ws/install/people_msgs:/home/ros2_ws/install/joint_limits:/home/ros2_ws/install/controller_interface:/home/ros2_ws/install/hardware_interface:/home/ros2_ws/install/controller_manager_msgs:/home/ros2_ws/install/btcpp_ros2_samples:/home/ros2_ws/install/behaviortree_ros2:/home/ros2_ws/install/btcpp_ros2_interfaces:/home/ros2_ws/install/behaviortree_cpp:/home/ros2_ws/install/rqt_controller_manager:/home/ros2_ws/install/ros2controlcli:/opt/ros/humble LD_LIBRARY_PATH=/home/hunav_gz_fortress_ws/install/hunav_msgs/lib:/home/ros2_ws/install/transmission_interface/lib:/home/ros2_ws/install/hardware_interface_testing/lib:/home/ros2_ws/install/gazebo_ros2_control/lib:/home/ros2_ws/install/controller_manager/lib:/home/ros2_ws/install/people_msgs/lib:/home/ros2_ws/install/joint_limits/lib:/home/ros2_ws/install/controller_interface/lib:/home/ros2_ws/install/hardware_interface/lib:/home/ros2_ws/install/controller_manager_msgs/lib:/home/ros2_ws/install/behaviortree_ros2/lib:/home/ros2_ws/install/btcpp_ros2_interfaces/lib:/home/ros2_ws/install/behaviortree_cpp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/hunav_gz_fortress_ws/install/hunav_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/hunav_gz_fortress_ws/build/hunav_rviz2_panel

@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-7f75fcebde9075c7bf1f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "hunav_agent_manager",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "hunav_agent_manager::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hunav_agent_manager-ab3cd8a9eceaf80c4ebc.json",
+					"name" : "hunav_agent_manager",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hunav_agent_manager_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hunav_agent_manager_uninstall-b3668d383d560c9f7c4f.json",
+					"name" : "hunav_agent_manager_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hunav_loader::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hunav_loader-126ff9498c7d07ff4e0d.json",
+					"name" : "hunav_loader",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-9d6467be1ef5d6d8a549.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/hunav_gz_fortress_ws/build/hunav_agent_manager",
+		"source" : "/home/hunav_gz_fortress_ws/src/hunav_sim/hunav_agent_manager"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

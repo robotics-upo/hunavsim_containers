@@ -1,0 +1,1 @@
+/home/hunav_gz_fortress_ws/src/hunav_gazebo_fortress_wrapper/launch/example_cafe_fortress.launch.py

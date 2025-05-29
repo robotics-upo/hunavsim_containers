@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-3d4848b935c310d90555.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "hunav_msgs__py",
+					"jsonFile" : "directory-hunav_msgs__py-9d56c31e70abf41e30e3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/hunav_gz_classic_ws/build/hunav_msgs/hunav_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "hunav_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_hunav_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_hunav_msgs_egg-5713eec6654223ed12d2.json",
+					"name" : "ament_cmake_python_build_hunav_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_hunav_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_hunav_msgs-40b3b6bff33617b8f01b.json",
+					"name" : "ament_cmake_python_symlink_hunav_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hunav_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hunav_msgs-17546647285c5615cb1f.json",
+					"name" : "hunav_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hunav_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hunav_msgs__cpp-bdc38d643c1995b69c28.json",
+					"name" : "hunav_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "hunav_msgs__py::@e3506108a4d4adc9c2fe",
+					"jsonFile" : "target-hunav_msgs__py-a8b8b368514ac4ec950d.json",
+					"name" : "hunav_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hunav_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hunav_msgs__rosidl_generator_c-3719302d9ed65d83ba35.json",
+					"name" : "hunav_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hunav_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hunav_msgs__rosidl_generator_py-bf43c4993755a8a4a851.json",
+					"name" : "hunav_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hunav_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hunav_msgs__rosidl_typesupport_c-7aa51e9eaa4b47962d4b.json",
+					"name" : "hunav_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hunav_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hunav_msgs__rosidl_typesupport_c__pyext-49a611e4e62733969437.json",
+					"name" : "hunav_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hunav_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hunav_msgs__rosidl_typesupport_cpp-3a3d945b4550190a0999.json",
+					"name" : "hunav_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hunav_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hunav_msgs__rosidl_typesupport_fastrtps_c-13001abe03552fee3de4.json",
+					"name" : "hunav_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hunav_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hunav_msgs__rosidl_typesupport_fastrtps_c__pyext-23d02391d0ede8df4530.json",
+					"name" : "hunav_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hunav_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hunav_msgs__rosidl_typesupport_fastrtps_cpp-ac52eb0bc8f997034277.json",
+					"name" : "hunav_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hunav_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hunav_msgs__rosidl_typesupport_introspection_c-dce9412c6434f28504ec.json",
+					"name" : "hunav_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hunav_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hunav_msgs__rosidl_typesupport_introspection_c__pyext-d296970387d82a855926.json",
+					"name" : "hunav_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hunav_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hunav_msgs__rosidl_typesupport_introspection_cpp-e0ebd606aad38449a7ca.json",
+					"name" : "hunav_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hunav_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hunav_msgs_uninstall-bfa2c2f62f7a99694e43.json",
+					"name" : "hunav_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-36881cc13f531fc53f6a.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/hunav_gz_classic_ws/build/hunav_msgs",
+		"source" : "/home/hunav_gz_classic_ws/src/hunav_sim/hunav_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

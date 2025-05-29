@@ -1,0 +1,5 @@
+[0.157s] Invoking command in '/home/hunav_gz_classic_ws/build/hunav_rviz2_panel': AMENT_PREFIX_PATH=/home/hunav_gz_classic_ws/install/hunav_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hunav_gz_classic_ws/install/hunav_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/hunav_gz_classic_ws/install/hunav_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hunav_gz_classic_ws/install/hunav_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/hunav_gz_classic_ws/build/hunav_rviz2_panel -- -j16 -l16
+[0.206s] [ 16%] [34m[1mAutomatic MOC for target hunav_rviz2_panel[0m
+[0.233s] [ 16%] Built target hunav_rviz2_panel_autogen
+[0.246s] [35m[1mConsolidate compiler generated dependencies of target hunav_rviz2_panel[0m
+[0.282s] [100%] Built target hunav_rviz2_panel

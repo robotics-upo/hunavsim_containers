@@ -1,0 +1,6 @@
+prepend-non-duplicate;GAZEBO_MODEL_PATH;share/hunav_gazebo_wrapper/models
+prepend-non-duplicate;GAZEBO_MODEL_PATH;share/hunav_gazebo_wrapper
+prepend-non-duplicate;GAZEBO_RESOURCE_PATH;share/hunav_gazebo_wrapper/worlds
+prepend-non-duplicate;GAZEBO_RESOURCE_PATH;share/hunav_gazebo_wrapper/models
+prepend-non-duplicate;GAZEBO_RESOURCE_PATH;share/hunav_gazebo_wrapper
+prepend-non-duplicate;GAZEBO_PLUGIN_PATH;lib

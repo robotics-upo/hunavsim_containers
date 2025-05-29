@@ -1,0 +1,19 @@
+[ 25%] Built target hunav_loader
+[100%] Built target hunav_agent_manager
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/hunav_gz_classic_ws/install/hunav_agent_manager/lib/hunav_agent_manager/hunav_agent_manager
+-- Up-to-date symlink: /home/hunav_gz_classic_ws/install/hunav_agent_manager/lib/hunav_agent_manager/hunav_loader
+-- Up-to-date symlink: /home/hunav_gz_classic_ws/install/hunav_agent_manager/share/hunav_agent_manager//behavior_trees/BTCuriousNav.xml
+-- Up-to-date symlink: /home/hunav_gz_classic_ws/install/hunav_agent_manager/share/hunav_agent_manager//behavior_trees/BTRegularNav.xml
+-- Up-to-date symlink: /home/hunav_gz_classic_ws/install/hunav_agent_manager/share/hunav_agent_manager//behavior_trees/BTScaredNav.xml
+-- Up-to-date symlink: /home/hunav_gz_classic_ws/install/hunav_agent_manager/share/hunav_agent_manager//behavior_trees/BTSurprisedNav.xml
+-- Up-to-date symlink: /home/hunav_gz_classic_ws/install/hunav_agent_manager/share/hunav_agent_manager//behavior_trees/BTThreateningNav.xml
+[31mCMake Error at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:100 (message):
+  ament_cmake_symlink_install_directory() can't find
+  '/home/hunav_gz_classic_ws/src/hunav_sim/hunav_agent_manager/config'
+Call Stack (most recent call first):
+  ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:317 (ament_cmake_symlink_install_directory)
+  cmake_install.cmake:46 (include)
+
+[0m
