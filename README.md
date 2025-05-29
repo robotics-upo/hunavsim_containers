@@ -2,15 +2,17 @@
 
 **This is a work in progress version**
 
-This is a package with the files and tools required to build and run Docker containers with the HuNavSim and different Robotics simulators. Te available options are:
+This is a package with the files and tools required to build and run Docker containers with the HuNavSim and different Robotics simulators under ROS 2. Te available options are:
 
 1. HuNavSim + Gazebo Classic 11 + ROS 2 Humble + PAL PMB2 robot
-2. HuNavSim + Gazebo Fortress   + ROS 2 Humble
-3. HuNavSim + Isaac Sim         + ROS 2 Humble + Carter robot
-4. HuNavSim + Webots            + ROS 2 Humble + robot? **AVAILABLE SOON!**"
+2. HuNavSim + Gazebo Fortress   + ROS 2 Humble  (**NO ROBOT FOR THE MOMENT!**)
+3. HuNavSim + Isaac Sim         + ROS 2 Humble + different robots
+4. HuNavSim + Webots            + ROS 2 Humble + PAL TIAGo robot (**AVAILABLE SOON!**)"
 
-Option 1 includes the [PMB2 Robot (ROS 2)](https://github.com/pal-robotics/pmb2_simulation/tree/humble-devel) robot of PAL robotics and the ROS 2 navigation system up.
-The other options includes examples of the HuNavSim without any robot included in the simulations for the moment. 
+Option 1 Gazebo Classic includes the [PMB2 Robot (ROS 2)](https://github.com/pal-robotics/pmb2_simulation/tree/humble-devel) robot of PAL robotics and the ROS 2 navigation system up.
+Option 2 Gazebo Fortress does not include any robot for the moment. We will work to include it. 
+Option 3 Isaac Sim allows to select between different robots.
+Option 4 Webots includes the TIAGo robot of PAL Robotics ([TIAGO Lite](https://github.com/cyberbotics/webots_ros2/wiki/Example-TIAGo)). 
 
 The containers contains all the required packages to run different simulations of the HuNavSim in the chosen Robotics Simulator. Moreover, the HuNavSim software is installed in a shared directory with the host system, so the user can modify or create new simulations and store them.   
 
@@ -41,7 +43,7 @@ Then you can execute it:
 ```
 
 This script will ask you about the option that you want to install, and will show the installation progress. 
-The HuNavSim software, will be installed in a shared workspace, so you can modify and create your own environments.   
+**The HuNavSim software and the indicated wrapper, will be installed in a shared workspace shared with the docker container, located inside the indicated simulator directory, so you can modify and create your own environments with persistance.**   
 
 
 # Execution
@@ -52,62 +54,34 @@ After system installation, the installation program will show on the screen the 
 chmod +x given_script_name.bash
 ```
 
-## Execution Option 1 (Gazebo Classic)
-
 Execute the indicated script:
 
 ```sh
-./run-hunav_gz_classic11_pmb2.bash
+./given_script_name.bash
 ```
 
-Once you are inside the container terminal, move the shared workspace and compile it before running any simulation.
+
+## Execution Option 1, 2 and 4 (Gazebo Classic, Gazebo Fortress and Webots)
+
+The previous script will run the docker container and will compile the current workspace. Moreover it will show a menu with the possible options. It will show the stored scenarios that can be executed (.yaml files in the *scenarios* directory of the running wrapper) along with other options. For example:
 
 ```sh
-cd ../hunav_gz_classic_ws
+========= HuNavSim Docker Menu =========
+  1) Run environment agents_cafe.yaml
+  2) Run environment agents_house.yaml
+  3) Run environment agents_warehouse.yaml
+  4) Create a new environment with RViz
+  5) Open a bash shell
+  6) Exit
+========================================
+Select an option (number): 
 ```
 
-```sh
-colcon build --symlink-install
-source install/setup.bash
-```
+With option 4, the RViz with the HuNavSim panel will be opened so the user can create new scenarios (**ONGOING WORK**).
 
-Then, you have three different example scenarios to launch the Pmb2 robot (with autonomous navigation) and the HuNavSim agents:
+The user can create/modify the simulations throught the shared workspace. 
 
-1. Café scenario: ```ros2 launch hunav_gazebo_wrapper pmb2_cafe.launch.py```
-2. House environment: ```ros2 launch hunav_gazebo_wrapper small_house.launch.py``` 
-3. Small warehouse scenario: ```ros2 launch hunav_gazebo_wrapper small_warehouse.launch.py ```
-
-The user can create/modify the simulations throught the shared workspace *hunav_gz_classic_ws*. 
-
-NOTE1: SOMETIMES, GAZEBO TAKES A LONG TIME TO LAUNCH THE FIRST TIME LEADING TO ERRORS IN THE SYSTEM. IN THAT CASE, RE-RUN THE ROS LAUNCH FILE AGAIN. IT SHOULD WORK THE SECOND TIME.
-
-NOTE2: SOMETIMES, AFTER SHUTTING DOWN THE SIMULATION, GAZEBO DOES NOT CLOSE PROPERLY AND IT BECOMES A ZOMBIE PROCESS. PLEASE CHECK WITH TOOLS LIKE *top* and *htop* WHETHER THE PROCESS IS STILL ALIVE AND KILL IT IF NECESSARY.  
-
-
-## Execution Option 2 (Gazebo Fortress)
-
-Execute the indicated script:
-
-```sh
-./run-hunav_gz_fortress.bash
-```
-
-Once you are inside the container terminal, move the shared workspace and compile it before running any simulation.
-
-```sh
-cd ../hunav_gz_fortress_ws
-```
-
-```sh
-colcon build --symlink-install
-source install/setup.bash
-```
-
-Then, you can launch an example of HuNavSim agents moving in the cafe environment. No navigation robot is included in this example. The person stand still in the center is acting as the robot.  
-
-```ros2 launch hunav_gazebo_fortress_wrapper cafe_fortress_test.launch.py```
-
-NOTE: ONGOING WORK. WE WILL TRY TO EXTEND THE NUMBER OF EXAMPLE ESCENARIOS AND TO INCLUDE ROBOTS. 
+NOTE FOR GAZEBO CLASSIC: SOMETIMES, GAZEBO TAKES A LONG TIME TO LAUNCH THE FIRST TIME LEADING TO ERRORS IN THE SYSTEM. IN THAT CASE, STOP THE SYSTEM (CRTL+C), THE MENU WILL SHOW UP AGAIN, AND RE-RUN THE ENVIRONMENT AGAIN. IT SHOULD WORK THE SECOND TIME.
 
 
 ## Execution Option 3 (Isaac Sim)
