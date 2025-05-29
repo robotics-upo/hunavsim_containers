@@ -1,0 +1,112 @@
+# get image of ROS 2 humble
+FROM osrf/ros:humble-desktop-full
+
+#
+# docker build -t pmb2_hunavsim -f Dockerfile.hunav_gz_classic11_pmb2 .
+#
+
+WORKDIR /home
+
+ENV QT_X11_NO_MITSHM=1
+ENV EDITOR=nano
+ENV XDG_RUNTIME_DIR=/tmp
+
+
+ENV SHELL=/bin/bash
+SHELL ["/bin/bash", "-c"] 
+
+
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+# we set distro ROS2 Humble
+ARG distro="humble"
+
+
+RUN apt-get update && apt-get install -y \
+	wget \
+ 	git \
+ 	bash-completion \
+ 	build-essential \
+ 	sudo \
+ 	nano \
+ 	&& rm -rf /var/lib/apt/lists/*
+
+RUN apt-get update && apt-get install -y \
+	python3-vcstool \
+	python3-rosdep \
+	python3-colcon-common-extensions \
+	&& rm -rf /var/lib/apt/lists/*
+
+RUN mkdir -p /etc/apt/keyrings && \
+    wget -qO /etc/apt/keyrings/Cyberbotics.asc https://cyberbotics.com/Cyberbotics.asc && \
+    echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/Cyberbotics.asc] https://cyberbotics.com/debian binary-amd64/" > /etc/apt/sources.list.d/Cyberbotics.list && \
+    apt-get update && \
+    apt-get install -y webots
+
+# other required ROS packages  
+RUN apt-get update && apt-get install -y \
+  ros-humble-nav2-* ros-dev-tools \
+  ros-humble-teleop-twist-joy ros-humble-urdf ros-humble-xacro \
+  ros-humble-webots-ros2 \
+  ros-humble-controller-interface ros-humble-controller-manager \
+  ros-humble-ros2-controllers \
+  ros-humble-joint-state-broadcaster ros-humble-joint-state-publisher \
+  ros-humble-joint-trajectory-controller ros-humble-joint-state-publisher-gui \
+  ros-humble-compressed-image-transport ros-humble-rqt* \
+  ros-humble-slam-toolbox ros-humble-navigation2 ros-humble-interactive-markers \
+  ros-humble-vision-msgs ros-humble-tf-transformations \
+  && rm -rf /var/lib/apt/lists/*
+
+RUN export WEBOTS_HOME=/usr/local/webots
+
+# rosdep    
+RUN apt-get install python3-rosdep -y
+#RUN rosdep init
+#RUN rosdep update
+#RUN rosdep install -i --from-path src --rosdistro humble -y
+
+# Create workspace
+RUN mkdir -p /home/webots_ws/src
+WORKDIR /home/webots_ws/src
+
+RUN echo "source /opt/ros/humble/setup.bash" >> /root/.bashrc 
+
+# install the lightsfm library
+RUN git clone https://github.com/robotics-upo/lightsfm.git \
+  && cd lightsfm && make && make install
+
+ENV ROS_DOMAIN_ID=78
+
+# ENV RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+
+ENV WEBOTS_HOME=/usr/local/webots
+
+# get last versions of these packages
+RUN git clone -b humble https://github.com/ros-controls/ros2_control.git
+
+# get people
+RUN git clone -b ros2 https://github.com/wg-perception/people.git
+#RUN git clone -b humble https://github.com/robotics-upo/hunav_sim.git
+#RUN git clone -b humble https://github.com/robotics-upo/hunav_gazebo_wrapper.git
+
+# get BehaviorTree.CPP v4.6 or newer
+RUN git clone https://github.com/BehaviorTree/BehaviorTree.CPP.git
+RUN git clone -b humble https://github.com/BehaviorTree/BehaviorTree.ROS2.git
+
+
+# compile the workspace
+WORKDIR /home/webots_ws/
+RUN source /opt/ros/humble/setup.bash && \
+  colcon build --symlink-install
+
+# source the workspace
+RUN source /home/webots_ws/install/setup.bash
+RUN echo "source /home/webots_ws/install/setup.bash" >> /root/.bashrc 
+
+COPY entrypoint.bash /entrypoint.bash
+RUN chmod +x /entrypoint.bash
+ENTRYPOINT ["/entrypoint.bash"]
+CMD ["bash"]
+
+

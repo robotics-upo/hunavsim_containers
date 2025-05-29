@@ -9,7 +9,7 @@ echo -e "\e[33m" # Start yellow for the rest
 echo -e "1. HuNavSim + Gazebo Classic 11 + ROS 2 Humble + PAL PMB2 robot"
 echo -e "2. HuNavSim + Gazebo Fortress   + ROS 2 Humble"
 echo -e "3. HuNavSim + Isaac Sim         + ROS 2 Humble + Carter robot"
-echo -e "4. HuNavSim + Webots            + ROS 2 Humble + robot? (AVAILABLE SOON!)"
+echo -e "4. HuNavSim + Webots            + ROS 2 Humble + Tiago robot"
 echo -e "5. HuNavSim + O3DE              + ROS 2 Humble + robot? (UMM.. WE ARE STILL THINKING ABOUT IT!)"
 echo -e "\e[0m"
 read -p "Please select an option (1-5): " option
@@ -84,15 +84,19 @@ case $option in
         ;;
     4)
         # HuNavSim + Webots            + ROS 2 Humble + robot? (AVAILABLE SOON!)
-        echo "You selected option 4: HuNavSim + Webots            + ROS 2 Humble + robot? (AVAILABLE SOON!)"
-        # run the installation script for HuNavSim + Webots            + ROS 2 Humble + robot? (AVAILABLE SOON!)
+        echo "You selected option 4: HuNavSim + Webots            + ROS 2 Humble + Tiago Robot"
+        LOCAL_DIR="webots"
+        cd $LOCAL_DIR
         # check if docker is installed
         if ! command -v docker &> /dev/null; then
             echo -e "\e[31mDocker is not installed. Please install Docker first.\e[0m"
             exit 1
         fi
-        echo "TO BE DONE!!!"
-        exit 1
+        WS_NAME="hunav_webots_ws"
+        CONTAINER_NAME="hunav_webots_sim"
+        DOCKERFILE_NAME="Dockerfile.hunav_webots"
+        REPO2_URL="https://github.com/robotics-upo/hunav_webots_wrapper.git"
+        RUN_SCRIPT_NAME="run-hunav_webots.bash"
         ;;
     5)
         # HuNavSim + O3DE              + ROS 2 Humble + robot? (UMM.. WE ARE STILL THINKING ABOUT IT!)

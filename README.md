@@ -7,7 +7,7 @@ This is a package with the files and tools required to build and run Docker cont
 1. HuNavSim + Gazebo Classic 11 + ROS 2 Humble + PAL PMB2 robot
 2. HuNavSim + Gazebo Fortress   + ROS 2 Humble  (**NO ROBOT FOR THE MOMENT!**)
 3. HuNavSim + Isaac Sim         + ROS 2 Humble + different robots
-4. HuNavSim + Webots            + ROS 2 Humble + PAL TIAGo robot (**AVAILABLE SOON!**)"
+4. HuNavSim + Webots            + ROS 2 Humble + PAL TIAGo robot"
 
 Option 1 Gazebo Classic includes the [PMB2 Robot (ROS 2)](https://github.com/pal-robotics/pmb2_simulation/tree/humble-devel) robot of PAL robotics and the ROS 2 navigation system up.
 Option 2 Gazebo Fortress does not include any robot for the moment. We will work to include it. 
