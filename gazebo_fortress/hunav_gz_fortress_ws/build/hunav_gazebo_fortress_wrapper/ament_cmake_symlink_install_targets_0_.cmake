@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/hunav_gz_fortress_ws/build/hunav_gazebo_fortress_wrapper/libHuNavSystemPluginIGN.so" "TARGETS" "HuNavSystemPluginIGN" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "LIBRARY_DESTINATION" "RUNTIME_DESTINATION" "bin")

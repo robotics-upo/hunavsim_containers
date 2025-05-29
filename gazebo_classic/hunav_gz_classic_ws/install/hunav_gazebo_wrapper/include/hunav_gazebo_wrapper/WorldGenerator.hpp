@@ -1,1 +1,0 @@
-/home/hunav_gz_classic_ws/src/hunav_gazebo_wrapper/include/hunav_gazebo_wrapper/WorldGenerator.hpp

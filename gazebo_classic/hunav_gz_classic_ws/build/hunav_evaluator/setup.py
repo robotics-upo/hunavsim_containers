@@ -1,1 +1,0 @@
-/home/hunav_gz_classic_ws/src/hunav_sim/hunav_evaluator/setup.py

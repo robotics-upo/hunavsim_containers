@@ -1,8 +1,0 @@
-/home/hunav_gz_classic_ws/build/hunav_msgs/rosidl_adapter/hunav_msgs:msg/Agent.idl
-/home/hunav_gz_classic_ws/build/hunav_msgs/rosidl_adapter/hunav_msgs:msg/Agents.idl
-/home/hunav_gz_classic_ws/build/hunav_msgs/rosidl_adapter/hunav_msgs:msg/AgentBehavior.idl
-/home/hunav_gz_classic_ws/build/hunav_msgs/rosidl_adapter/hunav_msgs:srv/ComputeAgents.idl
-/home/hunav_gz_classic_ws/build/hunav_msgs/rosidl_adapter/hunav_msgs:srv/ComputeAgent.idl
-/home/hunav_gz_classic_ws/build/hunav_msgs/rosidl_adapter/hunav_msgs:srv/MoveAgent.idl
-/home/hunav_gz_classic_ws/build/hunav_msgs/rosidl_adapter/hunav_msgs:srv/GetAgents.idl
-/home/hunav_gz_classic_ws/build/hunav_msgs/rosidl_adapter/hunav_msgs:srv/ResetAgents.idl

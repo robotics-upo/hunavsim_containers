@@ -1,7 +1,0 @@
-[0.154s] Invoking command in '/home/hunav_gz_classic_ws/build/hunav_gazebo_wrapper': AMENT_PREFIX_PATH=/home/hunav_gz_classic_ws/install/hunav_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hunav_gz_classic_ws/install/hunav_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/hunav_gz_classic_ws/install/hunav_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hunav_gz_classic_ws/install/hunav_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/hunav_gz_classic_ws/build/hunav_gazebo_wrapper -- -j16 -l16
-[0.200s] [ 50%] [32mBuilding CXX object CMakeFiles/HuNavPlugin.dir/src/HuNavPlugin.cpp.o[0m
-[0.200s] [ 50%] [32mBuilding CXX object CMakeFiles/hunav_gazebo_world_generator.dir/src/WorldGenerator.cpp.o[0m
-[3.219s] [ 75%] [32m[1mLinking CXX executable hunav_gazebo_world_generator[0m
-[3.362s] [ 75%] Built target hunav_gazebo_world_generator
-[13.029s] [100%] [32m[1mLinking CXX shared library libHuNavPlugin.so[0m
-[13.592s] [100%] Built target HuNavPlugin

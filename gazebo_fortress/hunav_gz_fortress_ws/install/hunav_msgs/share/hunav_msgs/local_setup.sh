@@ -1,1 +1,0 @@
-/home/hunav_gz_fortress_ws/build/hunav_msgs/ament_cmake_environment_hooks/local_setup.sh

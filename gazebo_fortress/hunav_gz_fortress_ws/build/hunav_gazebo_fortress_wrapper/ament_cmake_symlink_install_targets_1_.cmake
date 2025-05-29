@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/hunav_gz_fortress_ws/build/hunav_gazebo_fortress_wrapper/hunav_gazebo_world_generator" "TARGETS" "hunav_gazebo_world_generator" "DESTINATION" "lib/hunav_gazebo_fortress_wrapper")

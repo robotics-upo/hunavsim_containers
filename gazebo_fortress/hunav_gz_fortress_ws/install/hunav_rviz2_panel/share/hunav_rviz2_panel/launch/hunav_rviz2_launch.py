@@ -1,1 +1,0 @@
-/home/hunav_gz_fortress_ws/src/hunav_sim/hunav_rviz2_panel/launch/hunav_rviz2_launch.py

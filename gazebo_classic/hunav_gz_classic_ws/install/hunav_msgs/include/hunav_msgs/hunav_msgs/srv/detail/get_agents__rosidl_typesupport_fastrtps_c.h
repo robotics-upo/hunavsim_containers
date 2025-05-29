@@ -1,1 +1,0 @@
-/home/hunav_gz_classic_ws/build/hunav_msgs/rosidl_typesupport_fastrtps_c/hunav_msgs/srv/detail/get_agents__rosidl_typesupport_fastrtps_c.h

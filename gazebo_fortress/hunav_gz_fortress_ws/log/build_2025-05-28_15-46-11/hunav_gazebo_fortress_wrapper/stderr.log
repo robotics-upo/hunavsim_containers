@@ -1,8 +1,0 @@
-[01m[K/home/hunav_gz_fortress_ws/src/hunav_gazebo_fortress_wrapper/src/HuNavSystemPlugin_fortress.cpp:[m[K In member function ‘[01m[Kvoid HuNavSystemPluginIGN::fixActorHeight(const Agent&, ignition::math::v6::Pose3d&)[m[K’:
-[01m[K/home/hunav_gz_fortress_ws/src/hunav_gazebo_fortress_wrapper/src/HuNavSystemPlugin_fortress.cpp:983:73:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kag[m[K’ [[01;35m[K-Wunused-parameter[m[K]
-  983 | void HuNavSystemPluginIGN::fixActorHeight([01;35m[Kconst hunav_msgs::msg::Agent& ag[m[K, gz::math::Pose3d& actorPose)
-      |                                           [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
-[01m[K/home/hunav_gz_fortress_ws/src/hunav_gazebo_fortress_wrapper/src/HuNavSystemPlugin_fortress.cpp:[m[K In member function ‘[01m[Kvirtual void HuNavSystemPluginIGN::PreUpdate(const ignition::gazebo::v6::UpdateInfo&, ignition::gazebo::v6::EntityComponentManager&)[m[K’:
-[01m[K/home/hunav_gz_fortress_ws/src/hunav_gazebo_fortress_wrapper/src/HuNavSystemPlugin_fortress.cpp:1366:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdist[m[K’ [[01;35m[K-Wunused-variable[m[K]
- 1366 |         double [01;35m[Kdist[m[K = sqrt(pow(goalx - currx, 2) + pow(goaly - curry, 2));
-      |                [01;35m[K^~~~[m[K

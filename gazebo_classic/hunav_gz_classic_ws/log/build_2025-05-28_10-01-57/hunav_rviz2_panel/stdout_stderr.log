@@ -1,8 +1,0 @@
-[ 16%] [34m[1mAutomatic MOC for target hunav_rviz2_panel[0m
-[ 16%] Built target hunav_rviz2_panel_autogen
-[ 66%] [32mBuilding CXX object CMakeFiles/hunav_rviz2_panel.dir/src/metrics_panel.cpp.o[0m
-[ 66%] [32mBuilding CXX object CMakeFiles/hunav_rviz2_panel.dir/src/goal_tool.cpp.o[0m
-[ 66%] [32mBuilding CXX object CMakeFiles/hunav_rviz2_panel.dir/src/actor_panel.cpp.o[0m
-[ 83%] [32mBuilding CXX object CMakeFiles/hunav_rviz2_panel.dir/hunav_rviz2_panel_autogen/mocs_compilation.cpp.o[0m
-[100%] [32m[1mLinking CXX shared library libhunav_rviz2_panel.so[0m
-[100%] Built target hunav_rviz2_panel

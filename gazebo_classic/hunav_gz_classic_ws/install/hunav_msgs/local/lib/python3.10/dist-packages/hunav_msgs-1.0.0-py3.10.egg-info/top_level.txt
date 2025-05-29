@@ -1,1 +1,0 @@
-/home/hunav_gz_classic_ws/build/hunav_msgs/ament_cmake_python/hunav_msgs/hunav_msgs.egg-info/top_level.txt
