@@ -111,7 +111,7 @@ xhost +local:docker
 # 4. Run the container
 # ─────────────────────────────────────────────────────────────
 docker run --rm -it \
-  --name hunavsim_isaac --entrypoint bash \
+  --name hunav_isaac_sim \
   --gpus all --runtime=nvidia --privileged --network host \
   -e DISPLAY="$DISPLAY"         -e QT_X11_NO_MITSHM=1 \
   -e ROS_DOMAIN_ID="${ROS_DOMAIN_ID}" -e RMW_IMPLEMENTATION="${RMW_IMPL}" \

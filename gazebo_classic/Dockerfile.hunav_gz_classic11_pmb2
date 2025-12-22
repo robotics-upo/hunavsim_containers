@@ -21,6 +21,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 # we set distro ROS2 Humble
 ARG distro="humble"
+ARG INCLUDE_WORLD_GENERATOR=""
 
 # from now on, we install required packages for HuNavSim 
 ENV GAZEBO_MODEL_PATH=''
@@ -117,6 +118,11 @@ RUN git clone -b humble https://github.com/ros-controls/gazebo_ros2_control.git
 RUN git clone -b ros2 https://github.com/wg-perception/people.git
 #RUN git clone -b humble https://github.com/robotics-upo/hunav_sim.git
 #RUN git clone -b humble https://github.com/robotics-upo/hunav_gazebo_wrapper.git
+
+# Conditionally clone Gazebo World Generator if requested
+RUN if [ "$INCLUDE_WORLD_GENERATOR" = "yes" ]; then \
+        git clone https://github.com/robotics-upo/gazebo_world_generator.git; \
+    fi
 
 
 # Install Groot2 v1.6.1 

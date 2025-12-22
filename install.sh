@@ -7,9 +7,9 @@ echo -e "\e[33mPlease select wich HuNavSim system you want to install:\e[0m"
 echo -e "\e[33m" # Start yellow for the rest
 
 echo -e "1. HuNavSim 2.0 + Gazebo Classic 11 + ROS 2 Humble + Nav2 PAL PMB2 robot"
-echo -e "2. HuNavSim 2.0 + Gazebo Fortress   + ROS 2 Humble"
+echo -e "2. HuNavSim 2.0 + Gazebo Fortress   + ROS 2 Humble (\e[31mAVAILABLE SOON!\e[0m\e[33m)" 
 echo -e "3. HuNavSim 2.0 + Isaac Sim         + ROS 2 Humble + Nav2 Carter robot"
-echo -e "4. HuNavSim 2.0 + Webots            + ROS 2 Humble + Nav2 Tiago robot"
+echo -e "4. HuNavSim 2.0 + Webots            + ROS 2 Humble + Nav2 Tiago robot (\e[31mAVAILABLE SOON!\e[0m\e[33m)"
 #echo -e "5. HuNavSim + O3DE              + ROS 2 Humble + robot? (UMM.. WE ARE STILL THINKING ABOUT IT!)"
 echo -e "\e[0m"
 read -p "Please select an option (1-4): " option
@@ -28,6 +28,7 @@ DOCKERFILE_NAME="Dockerfile.hunav_gz_classic11_pmb2"
 REPO1_URL="https://github.com/robotics-upo/hunav_sim.git"
 REPO2_URL="https://github.com/robotics-upo/hunav_gazebo_wrapper.git"
 RUN_SCRIPT_NAME="run-hunav_gz_classic11_pmb2.bash"
+INCLUDE_WORLD_GENERATOR=""
 
 # evaluate the option
 #if [ "$option" -eq 1 ]; then
@@ -42,6 +43,20 @@ case $option in
         if ! command -v docker &> /dev/null; then
             echo -e "\e[31mDocker is not installed. Please install Docker first.\e[0m"
             exit 1
+        fi
+        # Ask about Gazebo World Generator
+        echo -e "\e[33m"
+        echo -e "Would you like to include the \e[94mGazebo World Generator\e[0m\e[33m package?"
+        echo -e "\e[93mDescription\e[0m\e[33m: A ROS2 package that uses LLMs to automatically create Gazebo Classic"
+        echo -e "simulation worlds from plain English descriptions, generating collision-free layouts"
+        echo -e "with intelligent object placement and navigation maps."
+        echo -e "\e[0m"
+        read -p "Include Gazebo World Generator? (y/n): " world_gen_option
+        if [[ "$world_gen_option" =~ ^[Yy]$ ]]; then
+            INCLUDE_WORLD_GENERATOR="yes"
+            echo -e "\e[32mGazebo World Generator will be included.\e[0m"
+        else
+            echo -e "\e[33mGazebo World Generator will not be included.\e[0m"
         fi
         ;;
 
@@ -114,7 +129,11 @@ echo -e "\e[33mInstalling HuNavSim docker system...\e[0m"
 echo -e "\e[33m============================\e[0m"
 echo -e "\e[33mBuilding the docker image...\e[0m"
 echo -e "\e[33m============================\e[0m"
-docker build -t "$CONTAINER_NAME" -f "$DOCKERFILE_NAME" .
+if [ "$INCLUDE_WORLD_GENERATOR" == "yes" ]; then
+    docker build --build-arg INCLUDE_WORLD_GENERATOR=yes -t "$CONTAINER_NAME" -f "$DOCKERFILE_NAME" .
+else
+    docker build -t "$CONTAINER_NAME" -f "$DOCKERFILE_NAME" .
+fi
 echo -e "\e[33m============================\e[0m"
 echo -e "\e[33mCreating share workspace '$WS_NAME'...\e[0m"
 echo -e "\e[33m============================\e[0m"
@@ -153,8 +172,7 @@ echo -e "\e[36mHuNavSim docker system has been installed successfully.\e[0m"
 echo -e "\e[36m_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-__-⁻-_-⁻-_-⁻-_-⁻-_\e[0m"
 cd ../..
 echo -e "\e[33mTo run the docker image, execute: \e[0m"
-echo -e "\e[33mcd $LOCAL_DIR\e[0m"
-echo -e "\e[33m ./$RUN_SCRIPT_NAME\e[0m"
+echo -e "\e[96m ./$RUN_SCRIPT_NAME\e[0m"
 echo -e "\e[33m_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-__-⁻-_-⁻-_-⁻-_-⁻-_\e[0m"
 
 
