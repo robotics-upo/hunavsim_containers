@@ -170,8 +170,7 @@ echo "Repository '$REPO2_URL' has been cloned."
 echo -e "\e[36m_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-__-⁻-_-⁻-_-⁻-_-⁻-_\e[0m"
 echo -e "\e[36mHuNavSim docker system has been installed successfully.\e[0m"
 echo -e "\e[36m_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-__-⁻-_-⁻-_-⁻-_-⁻-_\e[0m"
-cd ../..
-echo -e "\e[33mTo run the docker image, execute: \e[0m"
+echo -e "\e[33mTo run the docker image, execute the following script from the directory\e[0m \e[36m"$LOCAL_DIR"\e[0m\e[33m: \e[0m"
 echo -e "\e[96m ./$RUN_SCRIPT_NAME\e[0m"
 echo -e "\e[33m_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-_-⁻-__-⁻-_-⁻-_-⁻-_-⁻-_\e[0m"
 
