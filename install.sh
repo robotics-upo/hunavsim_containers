@@ -9,7 +9,7 @@ echo -e "\e[33m" # Start yellow for the rest
 echo -e "1. HuNavSim 2.0 + Gazebo Classic 11 + ROS 2 Humble + Nav2 PAL PMB2 robot"
 echo -e "2. HuNavSim 2.0 + Gazebo Fortress   + ROS 2 Humble (\e[31mAVAILABLE SOON!\e[0m\e[33m)" 
 echo -e "3. HuNavSim 2.0 + Isaac Sim         + ROS 2 Humble + Nav2 Carter robot"
-echo -e "4. HuNavSim 2.0 + Webots            + ROS 2 Humble + Nav2 Tiago robot (\e[31mAVAILABLE SOON!\e[0m\e[33m)"
+echo -e "4. HuNavSim 2.0 + Webots            + ROS 2 Humble + Nav2 Tiago robot"
 #echo -e "5. HuNavSim + O3DE              + ROS 2 Humble + robot? (UMM.. WE ARE STILL THINKING ABOUT IT!)"
 echo -e "\e[0m"
 read -p "Please select an option (1-4): " option
