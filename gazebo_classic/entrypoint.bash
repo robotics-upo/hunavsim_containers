@@ -47,6 +47,9 @@ while true; do
     echo -e "\e[33m  $i) Create a new scenario with RViz\e[0m"
     rviz_option=$i
     ((i++))
+    echo -e "\e[33m  $i) Compile the ROS workspace\e[0m"
+    compile_option=$i
+    ((i++))
     echo -e "\e[33m  $i) Open a bash shell\e[0m"
     bash_option=$i
     ((i++))
@@ -82,6 +85,13 @@ while true; do
                 error=true
                 exec bash
                 exit 1
+            fi
+        elif [ "$opt" -eq "$compile_option" ]; then
+            # Compile the workspace
+            echo "Compiling the workspace..."
+            cd /home/hunav_gz_classic_ws
+            if ! colcon build --symlink-install; then
+                echo "Error: the workspace compilation failed! "
             fi
         elif [ "$opt" -eq "$exit_option" ]; then
             echo -e "\e[33mExiting container.\e[0m"
