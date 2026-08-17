@@ -125,17 +125,17 @@ RUN if [ "$INCLUDE_WORLD_GENERATOR" = "yes" ]; then \
     fi
 
 
-# Install Groot2 v1.6.1 
+# Install Groot2 v1.6.1 --> 1.9.0
 WORKDIR /opt/Groot2
 
-ADD https://s3.us-west-1.amazonaws.com/download.behaviortree.dev/groot2_linux_installer/Groot2-v1.6.1-x86_64.AppImage Groot2.AppImage
-
-RUN chmod +x Groot2.AppImage && \
-    ./Groot2.AppImage --appimage-extract && \
+RUN wget https://pub-32cef6782a9e411e82222dee82af193e.r2.dev/Groot2-v1.9.0-x86_64.AppImage && \
+    chmod +x Groot2-v1.9.0-x86_64.AppImage && \
+    ./Groot2-v1.9.0-x86_64.AppImage --appimage-extract && \
     mkdir -p /opt/Groot2/bin && \
     mv squashfs-root /opt/Groot2/squashfs && \
     ln -s /opt/Groot2/squashfs/AppRun /opt/Groot2/bin/groot2 && \
-    rm Groot2.AppImage
+    rm Groot2-v1.9.0-x86_64.AppImage
+
 
 
 WORKDIR /home/pmb2_ws/src
